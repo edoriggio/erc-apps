@@ -1,20 +1,40 @@
 <template>
 <div class="app">
-  <div class="header">
-  <header-bar></header-bar>
-  </div>
-  <div class="page">
-    <router-view></router-view>
+  <menu-bar />
+
+  <div class="body">
+    <router-view />
   </div>
 </div>
 </template>
 
 <script>
-import HeaderBar from '@/components/HeaderBar'
+import MenuBar from '@/components/MenuBar'
+
 export default {
   components: {
-    HeaderBar
+    MenuBar
   },
   name: 'app'
 }
 </script>
+
+<style scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #F1F3F6;
+}
+
+.body {
+  margin-top: 170px;
+
+  width: 80vw;
+}
+</style>
