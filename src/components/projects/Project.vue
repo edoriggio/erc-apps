@@ -1,6 +1,6 @@
 <template>
 <div class="project-card">
-  <div class="project-icon">
+  <div class="project-icon" :class="path">
     <img :src="icon" alt="app icon">
   </div>
 
@@ -24,7 +24,8 @@ export default {
   props: {
     icon: String,
     title: String,
-    category: String
+    category: String,
+    path: String
   }
 }
 </script>
@@ -119,5 +120,25 @@ a:hover {
               inset -7px -7px 20px rgba(255, 255, 255,1),
               0px 0px 4px rgba(255, 255, 255,.2);
   transition: box-shadow 399ms ease-in-out;
+}
+
+.montessori img {
+  margin: 55px 0;
+  width: 80px;
+}
+
+.party img {
+  margin: 50.9px 0;
+  width: 80px;
+}
+
+.usi-productivity img {
+  margin: 57px 0;
+  width: 90px;
+}
+
+.airlinr img {
+  margin: 36px 0;
+  width: 110px;
 }
 </style>

@@ -5,7 +5,8 @@
   </h2>
 
   <div class="projects">
-    <project v-for="project in allProjects" :key="project.id" :icon="project.icon" :title="project.title" :category="project.category" />
+    <project v-for="project in allProjects" :key="project.id" :icon="project.icon"
+     :title="project.title" :category="project.category" :path="project.path" />
   </div>
 </div>
 </template>
@@ -40,8 +41,6 @@ export default {
 
 <style scoped>
 .title {
-  margin-bottom: 25px;
-
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -52,6 +51,8 @@ export default {
 
 .projects {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+
+  gap: 50px 70px;
 }
 </style>
