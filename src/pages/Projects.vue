@@ -1,6 +1,8 @@
 <template>
-<div>
+<div class="all-projects">
   <container title="Apps" />
+  <container title="Projects" />
+  <container title="Competitions" />
 </div>
 </template>
 
@@ -13,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .all-projects > div:not(:nth-of-type(1)) {
+    margin-top: 80px !important; 
+  }
+</style>

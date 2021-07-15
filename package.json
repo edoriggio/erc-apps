@@ -11,6 +11,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "remixicon": "^2.5.0",
     "vue": "^2.2.2",
     "vue-router": "^2.3.0",
     "vuex": "^2.3.0",

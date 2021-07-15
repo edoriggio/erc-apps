@@ -12,9 +12,9 @@
     {{ category }}
   </div>
 
-  <a class="project-button" :href="`/${title}`">
+  <router-link class="project-button" :to="`projects/${path}`">
     <p>View</p>
-  </a>
+  </router-link>
 </div>
 </template>
 
@@ -140,5 +140,20 @@ a:hover {
 .airlinr img {
   margin: 36px 0;
   width: 110px;
+}
+
+.duplicate-finder img {
+  margin: 51px 0;
+  width: 80px;
+}
+
+.game-of-life img {
+  margin: 68px 0;
+  width: 100px;
+}
+
+.classical-music img, .pet-companion img {
+  margin: 46px 0;
+  width: 90px;
 }
 </style>

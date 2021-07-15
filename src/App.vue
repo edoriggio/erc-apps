@@ -5,17 +5,21 @@
   <div class="body">
     <router-view />
   </div>
+  
+  <footer-view />
 </div>
 </template>
 
 <script>
 import MenuBar from '@/components/MenuBar'
+import FooterView from '@/components/FooterView'
 
 export default {
+  name: 'app',
   components: {
-    MenuBar
-  },
-  name: 'app'
+    MenuBar,
+    FooterView
+  }
 }
 </script>
 
@@ -26,10 +30,7 @@ export default {
 
   align-items: center;
 
-  height: 100vh;
   width: 100vw;
-
-  background-color: #F1F3F6;
 }
 
 .body {

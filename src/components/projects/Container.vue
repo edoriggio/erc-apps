@@ -5,7 +5,7 @@
   </h2>
 
   <div class="projects">
-    <project v-for="project in allProjects" :key="project.id" :icon="project.icon"
+    <project v-for="project in data" :key="project.id" :icon="project.icon"
      :title="project.title" :category="project.category" :path="project.path" />
   </div>
 </div>
@@ -23,17 +23,41 @@ export default {
   components: {
     Project
   },
-  mounted () {
-    this.getAllProjects()
+  data () {
+    return {
+      data: []
+    }
+  },
+  async mounted () {
+    switch (this.title) {
+      case 'Apps':
+        this.getAllApps()
+        this.data = this.allApps
+        break
+      case 'Projects':
+        this.getAllProjects()
+        this.data = this.allProjects
+        break
+      case 'Competitions':
+        this.getAllCompetitions()
+        this.data = this.allCompetitions
+        break
+      default:
+        break
+    }
   },
   computed: {
     ...mapGetters([
-      'allProjects'
+      'allApps',
+      'allProjects',
+      'allCompetitions'
     ])
   },
   methods: {
     ...mapActions([
-      'getAllProjects'
+      'getAllApps',
+      'getAllProjects',
+      'getAllCompetitions'
     ])
   }
 }
