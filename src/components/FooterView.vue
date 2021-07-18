@@ -1,24 +1,18 @@
 <template>
 <div class="footer">
-  <img src="/static/assets/logo/logo_clear.png" alt="erc apps logo">
-
-  <div class="social">
-    <i class="ri-github-fill" @click="open_link('http://www.github.com/edoriggio')" />
-    <i class="ri-instagram-line" alt="instagram logo" @click="open_link('http://www.instagram.com/erc_apps')" />
-    <i class="ri-linkedin-box-fill" @click="open_link('http://www.linkedin.com/in/edoardo-riggio')" />
-  </div>
-
+  <img src="https://raw.githubusercontent.com/edoriggio/erc-apps/gh-pages/static/assets/logo/logo_clear.png?token=AEKYMKY64CQM3QINNLNJXFLA7QFXS" alt="erc apps logo">
+  <socials />
   <p>&copy; 2021 ERC Apps</p>
 </div>
 </template>
 
 <script>
+import Socials from '@/components/Socials'
+
 export default {
   name: 'footer-view',
-  methods: {
-    open_link (url) {
-      window.open(url, '_blank')
-    }
+  components: {
+    Socials
   }
 }
 </script>
@@ -35,7 +29,7 @@ export default {
   width: 90%;
 
   margin-bottom: 50px;
-  margin-top: 120px;
+  margin-top: 90px;
 
   background: #F1F3F6;
   box-shadow: inset 7px 7px 15px rgba(55, 84, 170,.15),
@@ -61,25 +55,5 @@ export default {
 img {
   height: 100px;
   width: 100px;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  align-items: center;
-
-  gap: 0 15px;
-
-  color: black;
-  font-size: 30px;
-}
-
-.social > i {
-  height: 30px;
-  width: 30px;
-
-  cursor: pointer;
 }
 </style>

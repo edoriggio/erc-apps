@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
-import 'remixicon/fonts/remixicon.css'
 import { sync } from 'vuex-router-sync'
 
 sync(store, router)

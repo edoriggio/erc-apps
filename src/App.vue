@@ -6,7 +6,7 @@
     <router-view />
   </div>
   
-  <footer-view />
+  <footer-view v-if="name !== 'home'" />
 </div>
 </template>
 
@@ -19,6 +19,20 @@ export default {
   components: {
     MenuBar,
     FooterView
+  },
+  data () {
+    return {
+      name: ''
+    }
+  },
+  watch: {
+    $route (to, _) {
+      this.name = to.name
+      console.log(this.name)
+    }
+  },
+  mounted () {
+    this.name = this.$route.name
   }
 }
 </script>

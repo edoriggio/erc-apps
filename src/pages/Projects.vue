@@ -10,6 +10,7 @@
 import Container from '@/components/projects/Container'
 
 export default {
+  name: 'projects',
   components: {
     Container
   }

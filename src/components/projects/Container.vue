@@ -5,7 +5,7 @@
   </h2>
 
   <div class="projects">
-    <project v-for="project in data" :key="project.id" :icon="project.icon"
+    <project v-for="project in data" :key="project.name" :icon="project.icon"
      :title="project.title" :category="project.category" :path="project.path" />
   </div>
 </div>
