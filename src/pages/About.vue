@@ -20,7 +20,7 @@
       English</b> (CEFR: C1).
       <br><br>
       My main passion is informatics, but I also like UI/UX design and technology in general.
-      I am exerienced in web and app development.
+      I am experienced in web and app development.
     </p>
   </div>
 

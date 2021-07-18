@@ -15,10 +15,10 @@ const _skills = [
   },
   {
     index: 3,
-    name: 'GitHub',
+    name: 'Git',
     rate: 4,
-    color: ['181717', '111111', '1f1d1d'],
-    icon: 'github'
+    color: ['f05032', 'ad3a24', 'ff6640'],
+    icon: 'git'
   },
   {
     index: 4,

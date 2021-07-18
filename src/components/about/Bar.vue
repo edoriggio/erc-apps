@@ -1,5 +1,5 @@
 <template>
-  <div class="bar"><div class="bar-inner" :style="`width: calc()`"></div></div>
+<div class="bar"><div class="bar-inner" :style="vars"></div></div>
 </template>
 
 <script>
@@ -12,16 +12,28 @@ export default {
   },
   data () {
     return {
-      width: 0
+      width: Number,
+      proportion: Number,
+      color_one: String,
+      color_two: String,
+      color_three: String
     }
   },
   mounted () {
-    const bar = document.querySelectorAll('.bar-inner')[this.id - 1]
-    const width = document.getElementsByClassName('bar')[0].offsetWidth
-    const proportion = (width - (width / 5) * this.rating)
-    const shadow = `box-shadow: inset 2px 2px 3px #${this.color[1]}, inset -2px -2px 3px #${this.color[2]}`
-    const background = `background: #${this.color[0]}`
-    bar.setAttribute('style', `margin-right: ${proportion}px; ${shadow}; ${background}`)
+    this.color_one = this.color[0]
+    this.color_two = this.color[1]
+    this.color_three = this.color[2]
+    this.proportion = (100 * this.rating) / 5
+  },
+  computed: {
+    vars () {
+      return {
+        '--proportion': `${this.proportion}%`,
+        '--color-one': `#${this.color_one}`,
+        '--color-two': `#${this.color_two}`,
+        '--color-three': `#${this.color_three}`
+      }
+    }
   }
 }
 </script>
@@ -36,7 +48,7 @@ export default {
   border-radius: 10px;
 
   background: #F1F3F6;
-  box-shadow: inset 2px 2px 3px #b5b6b9,
+  box-shadow: inset 2px 2px 3px #d1d3d6,
               inset -2px -2px 3px #ffffff;
 }
 
@@ -44,5 +56,16 @@ export default {
   height: 15px;
 
   border-radius: 10px;
+
+  background: var(--color-one);
+  box-shadow: inset 2px 2px 3px var(--color-two),
+              inset -2px -2px 3px var(--color-three);
+  animation: progressBar 2.5s ease-in-out;
+  animation-fill-mode: both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: var(--proportion); }
 }
 </style>

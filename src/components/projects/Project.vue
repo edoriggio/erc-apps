@@ -152,7 +152,9 @@ a:hover {
   width: 100px;
 }
 
-.classical-music img, .pet-companion img {
+.classical-music img,
+.pet-companion img,
+.covid-newsletter img {
   margin: 46px 0;
   width: 90px;
 }

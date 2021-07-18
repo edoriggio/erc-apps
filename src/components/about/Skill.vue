@@ -50,7 +50,7 @@ export default {
 }
 
 .back > span > p {
-  width: 61px;
+  width: 62px;
 
   margin-right: 0;
 
