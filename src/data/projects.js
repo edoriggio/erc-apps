@@ -6,7 +6,7 @@ const _projects = [
     'macro_category': 'App',
     'icon': './static/assets/apps/chinaconvitto.png',
     'description': 'This application is part of Convitto Nazionale Vittorio Emanuele II student mobility project. Convitto is a high school in Rome that has an annual 3-weeks trip to China. During the stay, students will have to participate in morning classes at university, followed by evening cultural tours. To facilitate their permanence, I decided to create this application. Being a student of this high school, I lived firsthand this fantastic experience. Although during the visits, I noticed that the culture shock was substantial. Therefore the goal of this application is to make the students prepare for the trip beforehand.',
-    'screenshots': ['', '', ''],
+    'screenshots': ['./static/assets/apps/chinaconvitto/ChinaConvitto-screen-1.png', './static/assets/apps/chinaconvitto/ChinaConvitto-screen-2.png', './static/assets/apps/chinaconvitto/ChinaConvitto-screen-3.png'],
     'contents': ['The sections of the application are 5: Homepage, Monuments, Map, Tips and Rewind.',
       '**Homepage:** *[Screenshot 1]* In this page, we can find the meteorological condition of the city of Beijing or Shanghai (depending on where the user is – the default  is Beijing), the current local time and the links to the other sections.',
       '**Monuments:** *[Screenshot 2]* The monuments page contains photos and a written description of the place that the students will visit. These descriptions are written entirely by students and classified into years.',
@@ -43,7 +43,8 @@ const _projects = [
     'description': 'I consider this application one of my best works design-wise to date. The goal of this app is to give the user the ability to check if the dimensions and weight of their luggage is within the limits of a certain airline (such that you wouldn\'t need to pay extra). User can also look at detailed information of a certain airline.',
     'screenshots': ['', '', ''],
     'contents': ['The sections of the application are 3: Homepage, Tickets and Gadgets.',
-      '**Airlines:** *[Screenshot 1]* Here, users can look for any airline company. By clicking on the blue button next to each company, a screen will pop up with all of the airline\'s info. *[Screenshot 2]*',
+      '**Airlines (1):** *[Screenshot 1]* Here, users can look for any airline company.',
+      '**Airlines (2):** By clicking on the blue button next to each company, a screen will pop up with all of the airline\'s info. *[Screenshot 2]*',
       '**My Luggage:** *[Screenshot 3]* In this section, users can log their luggage\'s dimensions and compare them with the various airline companies. If the luggage is accepted (for weight and dimension), a blue checkmark will appear near the airline name.',
       '**Favorites:** Favorites airline companies will appear here.'],
     'achievements': []
@@ -57,7 +58,8 @@ const _projects = [
     'description': 'This application is the mockup of an application that was ment to be developed. Given that the project never saw the light of day, I decided to give it a new life by redesigning it a little bit and developing it. The aim of this app was to give the user the possibility to discover some of the most important and famous music festivals in the world. In this app you would have had the possibility to buy tickets and official merchandising too.',
     'screenshots': ['', '', ''],
     'contents': ['The sections of the application are 3: Homepage, Tickets and Gadgets.',
-      '**Homepage:** *[Screenshot 1]* In this page, users can see a sort of calendar where the next main events are displayed. By clicking on them the user can get more info on the festival, as well as buy tickets for that event. *[Screenshot 2]*',
+      '**Homepage (1):** *[Screenshot 1]* In this page, users can see a sort of calendar where the next main events are displayed',
+      '**Homepage (2):** By clicking on them the user can get more info on the festival, as well as buy tickets for that event. *[Screenshot 2]*',
       '**Tickets:** *[Screenshot 3]* Here users can find tickets for all the available festivals and their price.',
       '**Gadgets:** This is an online shop for official merchandise. Here users can buy gadgets from the festivals\' official stores.'],
     'achievements': []
@@ -73,7 +75,7 @@ const _projects = [
     'contents': ['The sections of the application are 5: Dashboard, Planner, Quick actions, Routines and Profile.',
       '**Dashboard:** *[Screenshot 1]* In this page, users can see their schedule for the next 12 hours. All events on the bottom will match their colors to the arcs around the clock, making it faster for the user to know when to do what.',
       '**Planner:** In this page all past, present and future events are stored. Here events are displayed with more details for a more granular control over the task/event.',
-      '**Quick action:** This is a little popup menu where users can choose between some quick actions, such as "Create a new task", "Start today\'s routine" and "Scan QR-Code".',
+      '**Quick Action:** This is a little popup menu where users can choose between some quick actions, such as "Create a new task", "Start today\'s routine" and "Scan QR-Code".',
       '**Routines:** Here users can select and start their own custom routines. *[Screenshot 2]* This for example, is how a routine would look like. Tasks can either be checked off as done or skipped. Furthermore, breaks of specific times could be added in the routine as well.',
       '**Profile:** The profile section *[Screenshot 3]* is were the user\'s achievements are displayed. Statistics are provided as well, to make the user have a sense of how he/she is spending time.'],
     'achievements': []

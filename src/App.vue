@@ -28,7 +28,6 @@ export default {
   watch: {
     $route (to, _) {
       this.name = to.name
-      console.log(this.name)
     }
   },
   mounted () {

@@ -15,14 +15,12 @@ export default {
       width: Number,
       proportion: Number,
       color_one: String,
-      color_two: String,
-      color_three: String
+      color_two: String
     }
   },
   mounted () {
     this.color_one = this.color[0]
     this.color_two = this.color[1]
-    this.color_three = this.color[2]
     this.proportion = (100 * this.rating) / 5
   },
   computed: {
@@ -30,8 +28,7 @@ export default {
       return {
         '--proportion': `${this.proportion}%`,
         '--color-one': `#${this.color_one}`,
-        '--color-two': `#${this.color_two}`,
-        '--color-three': `#${this.color_three}`
+        '--color-two': `#${this.color_two}`
       }
     }
   }
@@ -58,8 +55,7 @@ export default {
   border-radius: 10px;
 
   background: var(--color-one);
-  box-shadow: inset 2px 2px 3px var(--color-two),
-              inset -2px -2px 3px var(--color-three);
+  box-shadow: inset 2px 2px 3px var(--color-two);
   animation: progressBar 2.5s ease-in-out;
   animation-fill-mode: both; 
 }
