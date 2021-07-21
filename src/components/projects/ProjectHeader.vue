@@ -7,7 +7,7 @@
   </div>
 
   <div class="logo">
-    <img :src="icon" alt="app icon">
+    <img :class="`${path}-logo`" :src="icon" alt="app icon">
   </div>
 </div>
 </template>
@@ -18,7 +18,8 @@ export default {
   props: {
     title: String,
     category: String,
-    icon: String
+    icon: String,
+    path: String
   }
 }
 </script>
@@ -85,6 +86,12 @@ export default {
 }
 
 .logo > img {
-  width: 70%;
+  width: 50%;
+}
+</style>
+
+<style>
+.chinaconvitto-logo {
+  width: 70% !important;
 }
 </style>

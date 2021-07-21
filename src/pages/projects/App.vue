@@ -1,7 +1,7 @@
 <template>
 <div>
   <project-header :title="project.title" :category="`${project.macro_category}s`"
-  :icon="project.icon"/>
+  :icon="project.icon" :path="project.path"/>
 
   <div class="body">
     <div class="description">

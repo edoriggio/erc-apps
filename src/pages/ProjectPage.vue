@@ -13,10 +13,11 @@
   <div v-if="project.macro_category === 'App'">
     <h2>Other Apps</h2>
     <div class="others">
-      <div class="other" v-for="app in filtered_apps" :key="app">
-        <div><img :src="app.icon" alt="app icon"></div>
-        {{ app.title }}
-      </div>
+      <router-link class="other" v-for="app in filtered_apps" :key="app"
+      :to="`/projects/${app.path}`">
+        <div><img :class="`${app.path}-logo`" :src="app.icon" alt="app icon"></div>
+        <span>{{ app.title }}</span>
+      </router-link>
     </div>
   </div>
 </div>
@@ -41,6 +42,13 @@ export default {
       filtered_apps: {}
     }
   },
+  watch: {
+    $route (to, _) {
+      this.getProject(to.name)
+      location.reload()
+      window.scrollTo(0, 0)
+    }
+  },
   computed: {
     ...mapGetters([
       'all',
@@ -55,18 +63,7 @@ export default {
     this.getAllProjects()
     this.getAllCompetitions()
 
-    this.filtered_apps = this.allApps.filter(project => {
-      return project.path !== this.project_path
-    })
-    const foundProject = this.all.filter(project => {
-      return project.path === this.project_path
-    })
-    if (foundProject.length > 0) {
-      this.project = foundProject[0]
-    }
-    for (let i = 1; i < this.project.contents.length; i++) {
-      this.project.contents[i] = this.parseMarkdown(this.project.contents[i])
-    }
+    this.getProject(this.project_path)
   },
   methods: {
     ...mapActions([
@@ -83,6 +80,20 @@ export default {
         .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
 
       return html.trim()
+    },
+    getProject (path) {
+      this.filtered_apps = this.allApps.filter(project => {
+        return project.path !== path
+      })
+      const foundProject = this.all.filter(project => {
+        return project.path === path
+      })
+      if (foundProject.length > 0) {
+        this.project = foundProject[0]
+      }
+      for (let i = 1; i < this.project.contents.length; i++) {
+        this.project.contents[i] = this.parseMarkdown(this.project.contents[i])
+      }
     }
   }
 }
@@ -94,6 +105,16 @@ export default {
   flex-flow: row wrap;
 
   gap: 30px 50px;
+}
+
+.others > a {
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.others > a:hover {
+  text-decoration: underline;
 }
 
 .other{
