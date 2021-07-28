@@ -1,14 +1,8 @@
 <template>
 <div>
   <app v-if="project.macro_category === 'App'" :project="project" />
-
-  <div v-else-if="project.macro_category === 'Project'">
-    ok2
-  </div>
-
-  <div v-else-if="project.macro_category === 'Competition'">
-    ok3
-  </div>
+  <div v-else-if="project.macro_category === 'Project'" />
+  <div v-else-if="project.macro_category === 'Competition'" />
 
   <div v-if="project.macro_category === 'App'">
     <h2>Other Apps</h2>

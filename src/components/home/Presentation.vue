@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="presentation">
   <div class="left">
     <div class="name">
       Hello,
@@ -7,8 +7,8 @@
     </div>
 
     <div class="description">
-      Computer Science Student. Web and Mobile Developer.
-      Into UI/UX design. Creator of ERC Apps.
+      Computer Science Student. Web and Mobile <br> Developer.
+      Into UI/UX design. Creator of <br> ERC Apps.
     </div>
     
     <div class="links">
@@ -21,7 +21,7 @@
   </div>
 
   <div class="right">
-    <img src="" alt="">
+    <img src="/static/assets/profile_pic.png" alt="">
   </div>
 </div>
 </template>
@@ -37,6 +37,16 @@ export default {
 </script>
 
 <style scoped>
+.presentation {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0 150px;
+}
+
 .left {
   display: flex;
   flex-direction: column;
@@ -45,13 +55,35 @@ export default {
   justify-content: center;
 }
 
+.name {
+  font-size: 20px;
+}
+
+.name > h1 {
+  margin-top: 5px;
+
+  font-size: 35px;
+}
+
 .links {
   display: flex;
   flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+
+  gap: 0 20px;
+
+  margin-top: 30px;
 }
 
 .links > a {
-  padding: 5px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 150px;
 
   border-radius: 10px;
 
@@ -62,6 +94,15 @@ export default {
                     -7px -7px 20px rgb(255 255 255),
               inset 0px 0px 4px rgb(255 255 255 / 20%);
   transition: box-shadow 399ms ease-in-out;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #000000;
 }
 
 .links > a:hover {
@@ -72,9 +113,23 @@ export default {
 }
 
 .description {
+  text-align: justify;
+
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+
+  line-height: 20px;
+
   color: #6D6D6D;
+}
+
+.right > img {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 261px;
+  box-shadow: 12px 12px 24px #cdcfd1,
+              -12px -12px 24px #ffffff;
 }
 </style>
