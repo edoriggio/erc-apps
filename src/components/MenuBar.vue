@@ -1,7 +1,7 @@
 <template>
 <div class="menu">
   <router-link :class="(activeTab === 'project' || activeTab === 'projects') ? 'active' : ''" to="/projects">Projects</router-link>
-  <router-link :class="activeTab === 'home' ? 'active' : ''" to="/"><img src="https://raw.githubusercontent.com/edoriggio/erc-apps/gh-pages/static/assets/logo/logo_clear.png?token=AEKYMKY64CQM3QINNLNJXFLA7QFXS"></router-link>
+  <router-link :class="activeTab === 'home' ? 'active' : ''" to="/"><img src="https://i.postimg.cc/0Q1qcqmZ/logo-clear.png"></router-link>
   <router-link :class="activeTab === 'about' ? 'active' : ''" to="/about">About</router-link>
 </div>
 </template>

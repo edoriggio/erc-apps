@@ -1,6 +1,6 @@
 <template>
 <div class="footer">
-  <img src="https://raw.githubusercontent.com/edoriggio/erc-apps/gh-pages/static/assets/logo/logo_clear.png?token=AEKYMKY64CQM3QINNLNJXFLA7QFXS" alt="erc apps logo">
+  <img src="https://i.postimg.cc/0Q1qcqmZ/logo-clear.png" alt="erc apps logo">
   <socials />
   <p>&copy; 2021 ERC Apps</p>
 </div>

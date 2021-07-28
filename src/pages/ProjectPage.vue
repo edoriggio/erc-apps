@@ -62,6 +62,7 @@ export default {
     this.getAllApps()
     this.getAllProjects()
     this.getAllCompetitions()
+    window.scrollTo(0, 0)
 
     this.getProject(this.project_path)
   },
