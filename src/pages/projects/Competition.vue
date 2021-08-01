@@ -5,34 +5,35 @@
 
   <div class="body">
     <div class="description">
-      <h2>Description</h2>
-      <p>{{ project.description }}</p>
+      <h2>Competition</h2>
+      <span v-html="project.competition" />
     </div>
 
-    <div class="screenshots">
+    <div class="description">
+      <h2>Description</h2>
+      <span v-html="project.description" />
+    </div>
+
+    <div v-if="project.screenshots.length > 0" class="screenshots">
       <h2>Screenshots</h2>
       <div class="images">
         <img v-for="image in project.screenshots" :src="image" alt="" :key="image">
       </div>
     </div>
 
-    <div class="contents">
-      <h2>Contents</h2>
-      <p>{{ project.contents[0] }}</p>
+    <div v-if="project.technologies.length > 0" class="tecnologies">
+      <h2>Technologies</h2>
       <ul>
-        <li v-for="content in contents" :key="content">
-          <span v-html="content" />
+        <li v-for="technology in technologies" :key="technology">
+          <span v-html="technology" />
         </li>
       </ul>
     </div>
 
-    <div v-if="project.achievements.length > 0" class="contents">
-      <h2>Achievements</h2>
-      <ul>
-        <li v-for="achievement in achievements" :key="achievement">
-          <span v-html="achievement" />
-        </li>
-      </ul>
+    <div v-if="project.link.length > 0" class="github">
+      <h2>GitHub</h2>
+      <span>A more detailed description of the project can be found in the</span>
+      <a :href="project.link" target="_blank">GitHub repo</a>
     </div>
   </div>
 </div>
@@ -51,15 +52,12 @@ export default {
   },
   data () {
     return {
-      contents: Array,
-      achievements: Array
+      technologies: Array
     }
   },
   created () {
-    this.contents = this.project.contents.slice(1)
-    this.achievements = this.project.achievements
-
-    console.log(this.achievements)
+    this.technologies = this.project.technologies
+    console.log(this.project.description)
   }
 }
 </script>
@@ -75,6 +73,7 @@ export default {
 }
 
 p,
+span,
 li {
   font-style: normal;
   font-weight: normal;
@@ -85,7 +84,7 @@ li {
   color: #000000;
 }
 
-.contents > p {
+.tecnologies > p {
   margin-bottom: -3px;
 }
 
@@ -102,15 +101,5 @@ li {
 .images > img {
   height: 423px;
   width: 249.5px;
-}
-</style>
-
-<style>
-.gray {
-  color: #868686 !important;
-}
-
-.underline {
-  text-decoration: underline;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
 <div>
   <app v-if="project.macro_category === 'App'" :project="project" />
-  <div v-else-if="project.macro_category === 'Project'" />
-  <div v-else-if="project.macro_category === 'Competition'" />
+  <project v-else-if="project.macro_category === 'Project'" :project="project" />
+  <competition v-else-if="project.macro_category === 'Competition'" :project="project" />
 
   <div v-if="project.macro_category === 'App'">
     <h2>Other Apps</h2>
@@ -14,6 +14,28 @@
       </router-link>
     </div>
   </div>
+
+  <div v-else-if="project.macro_category === 'Project'">
+    <h2>Other Projects</h2>
+    <div class="others">
+      <router-link class="other" v-for="project in filtered_projects" :key="project"
+      :to="`/projects/${project.path}`">
+        <div><img :class="`${project.path}-logo`" :src="project.icon" alt="project icon"></div>
+        <span>{{ project.title }}</span>
+      </router-link>
+    </div>
+  </div>
+
+  <div v-else-if="project.macro_category === 'Competition'">
+    <h2>Other Competitions</h2>
+    <div class="others">
+      <router-link class="other" v-for="project in filtered_competitions" :key="project"
+      :to="`/projects/${project.path}`">
+        <div><img :class="`${project.path}-logo`" :src="project.icon" alt="project icon"></div>
+        <span>{{ project.title }}</span>
+      </router-link>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -21,6 +43,8 @@
 import { mapActions, mapGetters } from 'vuex'
 
 import App from '@/pages/projects/App'
+import Project from '@/pages/projects/Project'
+import Competition from '@/pages/projects/Competition'
 
 export default {
   name: 'project-page',
@@ -28,12 +52,16 @@ export default {
     project_path: String
   },
   components: {
-    App
+    App,
+    Project,
+    Competition
   },
   data () {
     return {
       project: {},
-      filtered_apps: {}
+      filtered_apps: {},
+      filtered_projects: {},
+      filtered_competitions: {}
     }
   },
   watch: {
@@ -71,13 +99,19 @@ export default {
       const html = md
         .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
         .replace(/\*(.*)\*/gim, '<label class="gray">$1</label>')
-        .replace(/_(.*)_/gim, '<p class="underline">$1</p>')
-        .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
+        .replace(/_(.*)_/gim, '<span class="underline">$1</span>')
+        .replace(/\[(.*?)\]\((.*?)\)/gim, '<a target="_blank" href="$2">$1</a>')
 
       return html.trim()
     },
     getProject (path) {
       this.filtered_apps = this.allApps.filter(project => {
+        return project.path !== path
+      })
+      this.filtered_projects = this.allProjects.filter(project => {
+        return project.path !== path
+      })
+      this.filtered_competitions = this.allCompetitions.filter(project => {
         return project.path !== path
       })
       const foundProject = this.all.filter(project => {
@@ -86,8 +120,27 @@ export default {
       if (foundProject.length > 0) {
         this.project = foundProject[0]
       }
-      for (let i = 1; i < this.project.contents.length; i++) {
-        this.project.contents[i] = this.parseMarkdown(this.project.contents[i])
+
+      if (this.project.macro_category === 'App') {
+        for (let i = 1; i < this.project.contents.length; i++) {
+          this.project.contents[i] = this.parseMarkdown(this.project.contents[i])
+        }
+
+        for (let i = 0; i < this.project.achievements.length; i++) {
+          this.project.achievements[i] = this.parseMarkdown(this.project.achievements[i])
+        }
+      } else if (this.project.macro_category === 'Project') {
+        for (let i = 0; i < this.project.technologies.length; i++) {
+          this.project.technologies[i] = this.parseMarkdown(this.project.technologies[i])
+        }
+
+        this.project.description = this.parseMarkdown(this.project.description)
+      } else if (this.project.macro_category === 'Competition') {
+        for (let i = 0; i < this.project.technologies.length; i++) {
+          this.project.technologies[i] = this.parseMarkdown(this.project.technologies[i])
+        }
+
+        this.project.competition = this.parseMarkdown(this.project.competition)
       }
     }
   }
@@ -95,6 +148,10 @@ export default {
 </script>
 
 <style scoped>
+div > h2 {
+  margin-top: 30px;
+}
+
 .others {
   display: flex;
   flex-flow: row wrap;

@@ -13,7 +13,7 @@ const _projects = [
       '**Map:** A map is displayed for users to see their position at all times, and monuments\' locations are displayed too.',
       '**Tips:** *[Screenshot 3]* In this section, suggestions are given mainly for new students. These range from suitcase preparation, to smog, water and internet issues, electrical socket\'s shape and useful phrases to use in case of an emergency.',
       '**Rewind:** This last section contains photos and videos taken by students of past years. Here the goal is for old students to relive the beautiful moments of the trip. While for new students, is a way to understand what they will do during those 3 weeks.'],
-    'achievements': ['_May 28 2018:_', 'The app became **n. 74** in the Italian education leaderboard of the App Store']
+    'achievements': ['_May 28 2018:_ The app became **n. 74** in the Italian education leaderboard of the App Store']
   },
   {
     'title': 'Montessori',
@@ -98,7 +98,7 @@ const _projects = [
     'category': 'Uni Project',
     'macro_category': 'Project',
     'icon': './static/assets/projects/gol.png',
-    'description': 'This program was made by me and (Michele Cattaneo)[https://github.com/MicheleCattaneo] as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
+    'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
     'technologies': ['**Language:** Python 3.6.9',
       '**External Packages:** Selenium, OpenCV and Pillow',
       '**Drivers:** Firefox gekodriver'],
@@ -110,11 +110,11 @@ const _projects = [
     'category': 'Designflows 2019',
     'macro_category': 'Competition',
     'icon': './static/assets/competitions/designflows2019.png',
-    'competition': 'Designflows 2019 - Online UI/UX design competition organized by Bending Spoons',
+    'competition': '[Designflows 2019](https://designflows.it/) - Online UI/UX design competition organized by Bending Spoons',
     'description': 'In this competition, candidates where asked to design an application for people who love music and what to increase their knowledge about the subject. The app had to be interactive and engaging. The three screens we had to design were: Homepage, where users could discover new content (such as music, podcasts...); Learn, where users had the possibility to study more in depth the world of music; and finally a Paywall, where users would land if they decided to go with the Pro version of the application. The total duration of the competition was of three days.',
-    'screenshots': ['', '', ''],
+    'screenshots': ['./static/assets/competitions/designflows2019/designflows2019-screen-1.png', './static/assets/competitions/designflows2019/designflows2019-screen-2.png', './static/assets/competitions/designflows2019/designflows2019-screen-3.png'],
     'technologies': [],
-    'link': ['https://designflows.it/']
+    'link': []
   },
   {
     'title': 'Pet Companion',
@@ -122,11 +122,11 @@ const _projects = [
     'category': 'Designflows 2020',
     'macro_category': 'Competition',
     'icon': './static/assets/competitions/designflows2020.png',
-    'competition': 'Designflows 2020 - Online UI/UX design competition organized by Bending Spoons',
+    'competition': '[Designflows 2020](https://designflows.it/) - Online UI/UX design competition organized by Bending Spoons',
     'description': 'During this competition, we were asked to create the design for an application for those passionate about pets, and who want to learn more about domestic animals. The app had to be divided into three screens: Discover, where users are recommended content; Maps, where users can find follow an educational track and test their knowledge on pets; and a Paywall, where the user lands when they want to subscribe - if they haven\'t done already. The total duration of this competition was of three days.',
-    'screenshots': ['', '', ''],
+    'screenshots': ['./static/assets/competitions/designflows2020/designflows2020-screen-1.png', './static/assets/competitions/designflows2020/designflows2020-screen-2.png', './static/assets/competitions/designflows2020/designflows2020-screen-3.png'],
     'technologies': [],
-    'link': ['https://designflows.it/']
+    'link': []
   },
   {
     'title': 'COVID Newsletter',
@@ -134,12 +134,12 @@ const _projects = [
     'category': '#CodeVsCovid19',
     'macro_category': 'Competition',
     'icon': './static/assets/competitions/newsletter.png',
-    'competition': '#CodeVsCovid19 - Online hackathon organized by Hack Zurich and ETH Zurich',
+    'competition': '[#CodeVsCovid19](https://www.codevscovid19.org/) - Online hackathon organized by Hack Zurich and ETH Zurich',
     'description': 'In a period as delicate as the one we are living in right now, being able to have the correct information is of crucial importance. This is why I decided to create this project. I wanted to bring data and information directly to the user in a visually pleasing and compact form, without making them search the whole internet just to find some extremely fragmented and difficult to read data. Users can subscribe to the newsletter through a webpage. Here they are requested to input their email address and by clicking on the following field, an overlay appears prompting them to choose from a list of over 200 countries, of which they would like to receive data and news. The countries selected can be more than one, and there is also the possibility to choose the option "World" – so that the user can receive data and news about COVID-19 from all around the world. Once the user has completed the signup process, his job is done. Every day, at around 6pm, an email will be sent automatically to his inbox. The email will contain data regarding the spread of COVID-19 in the selected countries with the aid of graphs, and links to the most recent news articles. The total duration of this competition was of 72 hours.',
     'screenshots': [],
     'technologies': ['**Language:** Python 3.8.2 and Node.js 12.16.3',
       '**External Packages:** Mailchimp API, Plotly'],
-    'link': ['https://www.codevscovid19.org/', 'https://github.com/edoriggio/covid19-daily-newsletter']
+    'link': ['https://github.com/edoriggio/covid19-daily-newsletter']
   }
 ]
 

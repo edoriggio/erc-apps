@@ -30,7 +30,7 @@
     </h2>
 
     <div class="skills">
-      <skill v-for="skill in skills" :key="skill.id" :id="skill.index" :name="skill.name"
+      <skill v-for="skill in skillsSorted" :key="skill.id" :id="skill.index" :name="skill.name"
       :rating="skill.rate" :icon="skill.icon" :color="skill.color" />
     </div>
   </div>
@@ -46,6 +46,11 @@ export default {
   components: {
     Skill
   },
+  data () {
+    return {
+      skillsSorted: []
+    }
+  },
   computed: {
     ...mapGetters([
       'skills'
@@ -53,6 +58,11 @@ export default {
   },
   mounted () {
     this.getSkills()
+    this.skillsSorted = this.skills.sort((a, b) => {
+      return a.name > b.name ? 1 : -1
+    })
+
+    console.log(this.skillsSorted)
   },
   methods: {
     ...mapActions([
