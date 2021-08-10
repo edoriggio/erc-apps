@@ -21,7 +21,7 @@
   </div>
 
   <div class="right">
-    <img src="/static/assets/profile_pic.png" alt="">
+    <img src="https://i.ibb.co/9wvn3G0/profile-pic.png" alt="profile-pic" />
   </div>
 </div>
 </template>
