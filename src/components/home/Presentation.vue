@@ -132,4 +132,16 @@ export default {
   box-shadow: 12px 12px 24px #cdcfd1,
               -12px -12px 24px #ffffff;
 }
+
+@media (max-width: 856px) {
+  .presentation {
+    flex-direction: column-reverse;
+
+    gap: 50px 0;
+
+    align-items: center;
+
+    z-index: -1;
+  }
+}
 </style>

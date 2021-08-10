@@ -28,4 +28,15 @@ export default {
   height: 300px;
   width: 800px;
 }
+
+@media (max-width: 856px) {
+  .presentation {
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+
+    margin-top: 20px;
+  }
+}
 </style>

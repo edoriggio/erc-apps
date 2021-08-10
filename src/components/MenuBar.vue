@@ -31,6 +31,8 @@ export default {
   display: flex;
   flex-direction: row;
 
+  z-index: 1;
+
   justify-content: center;
   align-items: center;
 

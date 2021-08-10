@@ -58,6 +58,12 @@ const _skills = [
     rate: 3,
     color: ['4fc08d', '3b906a'],
     icon: 'vuedotjs'
+  },
+  {
+    name: 'Docker',
+    rate: 1,
+    color: ['2ec0ff', '1a6cab'],
+    icon: 'docker'
   }
 ]
 

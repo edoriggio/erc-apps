@@ -56,4 +56,25 @@ img {
   height: 100px;
   width: 100px;
 }
+
+@media (max-width: 527px) {
+  .footer {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+  }
+
+  .footer > img,
+  .footer > p {
+    margin: 0;
+  }
+
+  .footer > p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 </style>
