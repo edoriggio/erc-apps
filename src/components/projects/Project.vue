@@ -122,34 +122,38 @@ a:hover {
   transition: box-shadow 399ms ease-in-out;
 }
 
-.montessori img {
+.montessori > img {
   margin: 55px 0;
   width: 80px;
 }
 
-.party img {
+.party > img {
   margin: 50.9px 0;
   width: 80px;
 }
 
-.usi-productivity img {
+.usi-productivity > img {
   margin: 57px 0;
   width: 90px;
 }
 
-.airlinr img {
+.airlinr > img {
   margin: 36px 0;
   width: 110px;
 }
 
-.duplicate-finder img {
+.duplicate-finder > img {
   margin: 51px 0;
   width: 80px;
 }
 
-.game-of-life img {
+.game-of-life > img {
   margin: 68px 0;
   width: 100px;
+}
+
+.checq-me > img {
+  filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
 }
 
 .classical-music img,

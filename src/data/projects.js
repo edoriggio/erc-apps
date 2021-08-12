@@ -102,7 +102,19 @@ const _projects = [
     'technologies': ['**Language:** Python 3.6.9',
       '**External Packages:** Selenium, OpenCV and Pillow',
       '**Drivers:** Firefox gekodriver'],
-    'link': ['https://github.com/edoriggio/instagram-duplicates-bot']
+    'link': ['https://github.com/edoriggio/game-of-life']
+  },
+  {
+    'title': 'Checq.me',
+    'path': 'checq-me',
+    'category': 'Uni Project',
+    'macro_category': 'Project',
+    'icon': './static/assets/projects/checq-me.svg',
+    'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
+    'technologies': ['**Language:** Python 3.6.9',
+      '**External Packages:** Selenium, OpenCV and Pillow',
+      '**Drivers:** Firefox gekodriver'],
+    'link': ['https://github.com/edoriggio/game-of-life']
   },
   {
     'title': 'Classical Music',
