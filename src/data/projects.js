@@ -67,7 +67,7 @@ const _projects = [
   {
     'title': 'USI Productivity',
     'path': 'usi-productivity',
-    'category': 'App Design',
+    'category': 'Uni Project',
     'macro_category': 'App',
     'icon': './static/assets/apps/usi_productivity.png',
     'description': 'This application was made as a project for university. In the course we were asked to do a full design study for a productivity application. This app should have helped students manage their time with more ease, as well as saving and tracking their most important events - such as assignments and exams. The application I designed made it would have made it possible for the user to create study/work routines, so that he/she could be able to have a fixed schedule - with fixed times - for every task they had to accomplish multiple times a day/week/month. Another feature of the app would have been the ability to create a shared calendar, which through a generated QR-Code, could be synchronized across multiple devices - i.e. multiple users (for example int the case of a project).',
@@ -99,9 +99,8 @@ const _projects = [
     'macro_category': 'Project',
     'icon': './static/assets/projects/gol.png',
     'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
-    'technologies': ['**Language:** Python 3.6.9',
-      '**External Packages:** Selenium, OpenCV and Pillow',
-      '**Drivers:** Firefox gekodriver'],
+    'technologies': ['**Language:** Java',
+      '**External Packages:** Swing'],
     'link': ['https://github.com/edoriggio/game-of-life']
   },
   {
@@ -110,11 +109,10 @@ const _projects = [
     'category': 'Uni Project',
     'macro_category': 'Project',
     'icon': './static/assets/projects/checq-me.svg',
-    'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
-    'technologies': ['**Language:** Python 3.6.9',
-      '**External Packages:** Selenium, OpenCV and Pillow',
-      '**Drivers:** Firefox gekodriver'],
-    'link': ['https://github.com/edoriggio/game-of-life']
+    'description': 'The project our team decided to develop was checq.me. checq.me is a web application that allows students, professors, and teaching assistants to prepare, perform, and grade mastery checks. The main idea of the project is to simplify the process of managing mastery checks. The web application we developed contains all the tools that professors and teaching assistants need to organise and grade mastery checks. Also, tools for students are provided, such as ways to prepare and schedule mastery checks. Our team developed this application with ease of use in mind so that both professors and students can have a pleasant experience. A full description of the project can be found at the [following link](https://www.linkedin.com/pulse/checqme-collaborative-open-source-tool-organise-mastery-riggio/).',
+    'technologies': ['**Languages:** JavaScript, HTML, SCSS, and EJS',
+      '**External Packages:** Node.js, Mongoose'],
+    'link': ['https://github.com/edoriggio/checq.me']
   },
   {
     'title': 'Classical Music',

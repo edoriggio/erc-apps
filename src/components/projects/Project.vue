@@ -153,7 +153,12 @@ a:hover {
 }
 
 .checq-me > img {
-  filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
+  filter: invert(20%)
+          sepia(63%)
+          saturate(1709%)
+          hue-rotate(216deg)
+          brightness(95%)
+          contrast(88%);
 }
 
 .classical-music img,
