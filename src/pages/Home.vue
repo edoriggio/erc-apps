@@ -37,7 +37,7 @@ export default {
     height: calc(100vh - 100px);
     width: 100vw;
 
-    transform: translateY(20px);
+    margin-top: 20px;
   }
 }
 </style>
