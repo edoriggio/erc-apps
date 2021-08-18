@@ -143,5 +143,10 @@ export default {
 
     z-index: -1;
   }
+
+  .right > img {
+    width: 200px;
+    height: 200px;
+  }
 }
 </style>

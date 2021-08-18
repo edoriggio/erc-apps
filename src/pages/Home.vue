@@ -32,11 +32,12 @@ export default {
 @media (max-width: 856px) {
   .presentation {
     position: relative;
+    z-index: -1;
 
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
 
-    margin-top: 20px;
+    transform: translateY(20px);
   }
 }
 </style>
