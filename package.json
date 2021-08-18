@@ -1,8 +1,8 @@
 {
   "name": "erc-apps",
   "version": "1.0.0",
-  "description": "Vue.Js Single Page App example",
-  "author": "Anirudh Sanjeev <skyronic@gmail.com>",
+  "description": "Edoardo Riggio's personal portfolio",
+  "author": "Edoardo Riggio <edo.riggio19@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
