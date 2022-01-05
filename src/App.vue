@@ -1,40 +1,54 @@
 <template>
-<div class="app">
-  <menu-bar />
+  <div class="app">
+    <menu-bar />
 
-  <div class="body">
-    <router-view />
+    <div class="body">
+      <router-view />
+    </div>
+
+    <footer-view v-if="name !== 'home'" />
   </div>
-  
-  <footer-view v-if="name !== 'home'" />
-</div>
 </template>
 
 <script>
-import MenuBar from '@/components/MenuBar'
-import FooterView from '@/components/FooterView'
+import MenuBar from "@/components/MenuBar";
+import FooterView from "@/components/FooterView";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     MenuBar,
-    FooterView
+    FooterView,
   },
-  data () {
+  data() {
     return {
-      name: ''
-    }
+      name: "",
+    };
   },
   watch: {
-    $route (to, _) {
-      this.name = to.name
-    }
+    $route(to) {
+      this.name = to.name;
+    },
   },
-  mounted () {
-    this.name = this.$route.name
-  }
-}
+  mounted() {
+    this.name = this.$route.name;
+  },
+};
 </script>
+
+<style>
+html {
+  font-family: Proxima Nova, sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #f1f3f6;
+}
+</style>
 
 <style scoped>
 .app {
@@ -48,7 +62,6 @@ export default {
 
 .body {
   margin-top: 170px;
-
   width: 80vw;
 }
 </style>

@@ -7,9 +7,9 @@
   <div v-if="project.macro_category === 'App'">
     <h2>Other Apps</h2>
     <div class="others">
-      <router-link class="other" v-for="app in filtered_apps" :key="app"
+      <router-link class="other" v-for="app in filtered_apps" :key="app.title"
       :to="`/projects/${app.path}`">
-        <div><img :class="`${app.path}-logo`" :src="app.icon" alt="app icon"></div>
+        <div><img :class="`${app.path}-logo`" :src="getIcon(app.icon)" alt="app icon"></div>
         <span>{{ app.title }}</span>
       </router-link>
     </div>
@@ -18,9 +18,9 @@
   <div v-else-if="project.macro_category === 'Project'">
     <h2>Other Projects</h2>
     <div class="others">
-      <router-link class="other" v-for="project in filtered_projects" :key="project"
+      <router-link class="other" v-for="project in filtered_projects" :key="project.title"
       :to="`/projects/${project.path}`">
-        <div><img :class="`${project.path}-logo`" :src="project.icon" alt="project icon"></div>
+        <div><img :class="`${project.path}-logo`" :src="getIcon(project.icon)" alt="project icon"></div>
         <span>{{ project.title }}</span>
       </router-link>
     </div>
@@ -29,9 +29,9 @@
   <div v-else-if="project.macro_category === 'Competition'">
     <h2>Other Competitions</h2>
     <div class="others">
-      <router-link class="other" v-for="project in filtered_competitions" :key="project"
+      <router-link class="other" v-for="project in filtered_competitions" :key="project.title"
       :to="`/projects/${project.path}`">
-        <div><img :class="`${project.path}-logo`" :src="project.icon" alt="project icon"></div>
+        <div><img :class="`${project.path}-logo`" :src="getIcon(project.icon)" alt="project icon"></div>
         <span>{{ project.title }}</span>
       </router-link>
     </div>
@@ -65,7 +65,7 @@ export default {
     }
   },
   watch: {
-    $route (to, _) {
+    $route (to) {
       this.getProject(to.name)
       location.reload()
       window.scrollTo(0, 0)
@@ -142,6 +142,9 @@ export default {
 
         this.project.competition = this.parseMarkdown(this.project.competition)
       }
+    },
+    getIcon(icon) {
+      return require(`@/${icon}`)
     }
   }
 }

@@ -45,7 +45,6 @@ export default {
   },
   created () {
     this.technologies = this.project.technologies
-    console.log(this.project.description)
   }
 }
 </script>

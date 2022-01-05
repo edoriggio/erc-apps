@@ -12,7 +12,7 @@
     <div class="screenshots">
       <h2>Screenshots</h2>
       <div class="images">
-        <img v-for="image in project.screenshots" :src="image" alt="" :key="image">
+        <img v-for="image in project.screenshots" :src="getIcon(image)" alt="" :key="image">
       </div>
     </div>
 
@@ -58,8 +58,11 @@ export default {
   created () {
     this.contents = this.project.contents.slice(1)
     this.achievements = this.project.achievements
-
-    console.log(this.achievements)
+  },
+  methods: {
+    getIcon (icon) {
+      return require(`@/${icon}`)
+    }
   }
 }
 </script>

@@ -1,28 +1,38 @@
 <template>
-<div class="menu">
-  <router-link :class="(activeTab === 'project' || activeTab === 'projects') ? 'active' : ''" to="/projects">Projects</router-link>
-  <router-link :class="activeTab === 'home' ? 'active' : ''" to="/"><img src="https://i.postimg.cc/0Q1qcqmZ/logo-clear.png"></router-link>
-  <router-link :class="activeTab === 'about' ? 'active' : ''" to="/about">About</router-link>
-</div>
+  <div class="menu">
+    <router-link
+      :class="
+        activeTab === 'project' || activeTab === 'projects' ? 'active' : ''
+      "
+      to="/projects"
+      >Projects</router-link
+    >
+    <router-link :class="activeTab === 'home' ? 'active' : ''" to="/"
+      ><img src="https://i.postimg.cc/0Q1qcqmZ/logo-clear.png"
+    /></router-link>
+    <router-link :class="activeTab === 'about' ? 'active' : ''" to="/about"
+      >About</router-link
+    >
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'menu-bar',
+  name: "menu-bar",
   watch: {
-    $route (to, _) {
-      this.activeTab = to.name
-    }
+    $route(to) {
+      this.activeTab = to.name;
+    },
   },
-  data () {
+  data() {
     return {
-      activeTab: ''
-    }
+      activeTab: "",
+    };
   },
-  created () {
-    this.activeTab = this.$route.name
-  }
-}
+  created() {
+    this.activeTab = this.$route.name;
+  },
+};
 </script>
 
 <style scoped>
@@ -42,12 +52,11 @@ export default {
   width: 90%;
 
   border-radius: 70px;
-  background-color: #F1F3F6;
-  box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
-              inset 0 0 20px rgba(255, 255, 255,0),
-              7px 7px 15px rgba(55, 84, 170,.15),
-              -7px -7px 20px rgba(255, 255, 255,1),
-              inset 0px 0px 4px rgba(255, 255, 255,.2);
+  background-color: #f1f3f6;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
 }
 
 .menu a {
