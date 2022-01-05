@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Edoardo Riggio's personal portfolio",
   "author": "Edoardo Riggio <edo.riggio19@gmail.com>",
-  "private": true,
+  "private": false,
+  "homepage": "https://erc-apps.com",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
