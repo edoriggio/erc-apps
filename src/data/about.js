@@ -1,13 +1,13 @@
 const _skills = [
   {
     name: 'Python',
-    rate: 4,
+    rate: 5,
     color: ['3776ab', '295980'],
     icon: 'python'
   },
   {
     name: 'Vue.js',
-    rate: 4,
+    rate: 5,
     color: ['4fc08d', '3b906a'],
     icon: 'vuedotjs'
   },
@@ -19,7 +19,7 @@ const _skills = [
   },
   {
     name: 'LaTeX',
-    rate: 4,
+    rate: 5,
     color: ['008080', '005c5c'],
     icon: 'latex'
   },
@@ -37,7 +37,7 @@ const _skills = [
   },
   {
     name: 'C/C++',
-    rate: 2,
+    rate: 3,
     color: ['00599c', '004070'],
     icon: 'cplusplus'
   },
@@ -55,7 +55,7 @@ const _skills = [
   },
   {
     name: 'Vue Native',
-    rate: 3,
+    rate: 4,
     color: ['4fc08d', '3b906a'],
     icon: 'vuedotjs'
   },

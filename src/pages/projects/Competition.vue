@@ -17,11 +17,11 @@
     <div v-if="project.screenshots.length > 0" class="screenshots">
       <h2>Screenshots</h2>
       <div class="images">
-        <img v-for="image in project.screenshots" :src="image" alt="" :key="image">
+        <img v-for="image in project.screenshots" :src="getIcon(image)" alt="" :key="image">
       </div>
     </div>
 
-    <div v-if="project.technologies.length > 0" class="tecnologies">
+    <div v-if="project.technologies.length > 0" class="technologies">
       <h2>Technologies</h2>
       <ul>
         <li v-for="technology in technologies" :key="technology">
@@ -57,8 +57,12 @@ export default {
   },
   created () {
     this.technologies = this.project.technologies
-    console.log(this.project.description)
-  }
+  },
+  methods: {
+    getIcon(icon) {
+      return require(`@/${icon}`)
+    }
+  },
 }
 </script>
 

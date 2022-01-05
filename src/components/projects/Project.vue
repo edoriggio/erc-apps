@@ -1,7 +1,7 @@
 <template>
 <div class="project-card">
   <div class="project-icon" :class="path">
-    <img :src="icon" alt="app icon">
+    <img :src="getIcon(icon)" alt="app icon">
   </div>
 
   <div class="project-title">
@@ -26,6 +26,11 @@ export default {
     title: String,
     category: String,
     path: String
+  },
+  methods: {
+    getIcon (icon) {
+      return require(`@/${icon}`)
+    }
   }
 }
 </script>

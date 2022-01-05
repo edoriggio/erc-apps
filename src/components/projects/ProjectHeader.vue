@@ -7,7 +7,7 @@
   </div>
 
   <div class="logo">
-    <img :class="`${path}-logo`" :src="icon" alt="app icon">
+    <img :class="`${path}-logo`" :src="getIcon(icon)" alt="app icon">
   </div>
 </div>
 </template>
@@ -20,6 +20,11 @@ export default {
     category: String,
     icon: String,
     path: String
+  },
+  methods: {
+    getIcon (icon) {
+      return require(`@/${icon}`)
+    }
   }
 }
 </script>

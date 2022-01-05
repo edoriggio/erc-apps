@@ -61,8 +61,6 @@ export default {
     this.skillsSorted = this.skills.sort((a, b) => {
       return a.name > b.name ? 1 : -1
     })
-
-    console.log(this.skillsSorted)
   },
   methods: {
     ...mapActions([

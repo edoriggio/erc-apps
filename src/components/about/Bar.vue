@@ -40,7 +40,7 @@ export default {
   height: 15px;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: fill-available;
+  width: stretch;
 
   border-radius: 10px;
 
