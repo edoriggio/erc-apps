@@ -2,44 +2,44 @@
 <html lang="">
 
 <head>
-  <title>ERC Apps</title>
+    <title>ERC Apps</title>
 
-  <script type="text/javascript">
-    (function (l) {
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
+    <script type="text/javascript">
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location))
+    </script>
 
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="author" content="Edoardo Riggio">
-  <meta name="description"
-    content="Hello, I am Edoardo. Coumputer Science student,Python and Swift developer.Into UI/UX design. Creator of ERC Apps.">
-  <meta name="keywords"
-    content="software, app, erc, project, python, java, github, html, css, university, chinaconvitto, montessori">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Edoardo Riggio">
+    <meta name="description"
+          content="Hello, I am Edoardo. Coumputer Science student,Python and Swift developer.Into UI/UX design. Creator of ERC Apps.">
+    <meta name="keywords"
+          content="software, app, erc, project, python, java, github, html, css, university, chinaconvitto, montessori">
 
-  <!-- <link rel="stylesheet" href="./static/normalize.css" /> -->
-  <link rel="stylesheet" href="https://unpkg.com/simple-icons-font@v5/font/simple-icons.min.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <!-- <link rel="stylesheet" href="./static/normalize.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/simple-icons-font@v5/font/simple-icons.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 </head>
 
 <body>
-  <noscript>
+<noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
 </body>
 
 </html>

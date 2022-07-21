@@ -6,8 +6,8 @@ import about from './about'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  modules: {
-    projects,
-    about
-  }
+    modules: {
+        projects,
+        about
+    }
 })
