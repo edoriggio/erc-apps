@@ -6,18 +6,18 @@
             </h2>
 
             <p>
-                Hi, I’m Edoardo, a software developer from Rome, Italy. Currently I'm a third-year
-                computer science bachelor student at <a href="https://www.usi.ch"><b>Università
-                della Svizzera Italiana</b></a> in Lugano, Switzerland.
+                Hi, I’m Edoardo, a software developer from Rome, Italy. Currently I am a first-year Master student in
+                Software and Data Engineering at <a href="https://www.usi.ch"><b>Università della Svizzera Italiana</b>
+                </a> in Lugano, Switzerland.
                 <br><br>
-                In 2019 I graduated from <a href="https://www.convittonazionaleroma.edu.it/nuovosito/"><b>
-                Convitto Nazionale “Vittorio Emanuele II” di Roma</b></a>, a
-                highschool in Rome. In this highschool I followed a study career called "Scientifico
-                Internazionale ad Opzione Lingua Cinese", where I studied Chinese as a second language
-                and went to China every year for four weeks (first two years to Beijing and the next
-                two years to Shanghai). During the fourth year of highschool, I went to Shanghai for
-                six months. During that year I also passed <b>HSK 4 in Chinese</b> (CEFR: B2) and <b>CAE in
-                English</b> (CEFR: C1).
+                In July 2022 I received a Bachelor of Science in Computer Science degree at <a href="https://www.usi.ch">
+                <b>Università della Svizzera Italiana</b></a> in Lugano, Switzerland. In July 2019 I graduated from
+                <a href="https://www.convittonazionaleroma.edu.it/nuovosito/"><b> Convitto Nazionale “Vittorio Emanuele
+                II” di Roma</b></a>, a highschool in Rome. In this highschool I followed a study career called
+                "Scientifico Internazionale ad Opzione Lingua Cinese", where I studied Chinese as a second language
+                and went to China every year for four weeks (first two years to Beijing and the next two years to
+                Shanghai). During the fourth year of highschool, I went to Shanghai for six months. During that year I
+                also passed <b>HSK 4 in Chinese</b> (CEFR: B2) and <b>CAE in English</b> (CEFR: C1).
                 <br><br>
                 My main passion is informatics, but I also like UI/UX design and technology in general.
                 I am experienced in web and app development.
@@ -26,12 +26,34 @@
 
         <div class="section">
             <h2 class="title">
-                Experience
+                Programming Languages
             </h2>
 
             <div class="skills">
                 <skill v-for="skill in skillsSorted" :key="skill.id" :id="skill.index" :name="skill.name"
-                       :rating="skill.rate" :icon="skill.icon" :color="skill.color"/>
+                       :rating="skill.rate" :icon="skill.icon" :color="skill.color" :projects="skill.projects" />
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="title">
+                Known Technologies
+            </h2>
+
+            <div class="skills">
+                <skill v-for="experience in experienceSorted" :key="experience.id" :id="experience.index" :name="experience.name"
+                       :rating="experience.rate" :icon="experience.icon" />
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="title">
+                Spoken Languages
+            </h2>
+
+            <div class="skills">
+                <skill v-for="language in languages" :key="language.id" :id="language.index" :name="language.name"
+                       :rating="language.rate" :icon="language.icon" :language="true" />
             </div>
         </div>
     </div>
@@ -48,23 +70,35 @@ export default {
     },
     data() {
         return {
-            skillsSorted: []
+            skillsSorted: [],
+            experienceSorted: []
         }
     },
     computed: {
         ...mapGetters([
-            'skills'
+            'skills',
+            'languages',
+            'experience'
         ])
     },
     mounted() {
         this.getSkills()
+        this.getLanguages()
+        this.getExperience()
+
         this.skillsSorted = this.skills.sort((a, b) => {
+            return a.name > b.name ? 1 : -1
+        })
+
+        this.experienceSorted = this.experience.sort((a, b) => {
             return a.name > b.name ? 1 : -1
         })
     },
     methods: {
         ...mapActions([
-            'getSkills'
+            'getSkills',
+            'getLanguages',
+            'getExperience'
         ])
     }
 }
@@ -73,9 +107,10 @@ export default {
 <style scoped>
 .skills {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    gap: 35px 0;
+    gap: 30px 30px;
 }
 
 .section:not(:nth-of-type(1)) {
@@ -96,5 +131,11 @@ export default {
 
 .section > p > a:hover {
     color: #3776AB;
+}
+
+@media (max-width: 551px) {
+    .skills {
+        flex-direction: column;
+    }
 }
 </style>

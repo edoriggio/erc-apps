@@ -99,7 +99,7 @@ export default {
             const html = md
                     .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
                     .replace(/\*(.*)\*/gim, '<label class="gray">$1</label>')
-                    .replace(/_(.*)_/gim, '<span class="underline">$1</span>')
+                    .replace(/__(.*)__/gim, '<span class="underline">$1</span>')
                     .replace(/\[(.*?)\]\((.*?)\)/gim, '<a target="_blank" href="$2">$1</a>')
 
             return html.trim()
@@ -141,6 +141,7 @@ export default {
                 }
 
                 this.project.competition = this.parseMarkdown(this.project.competition)
+                this.project.description = this.parseMarkdown(this.project.description)
             }
         },
         getIcon(icon) {
@@ -192,11 +193,31 @@ div > h2 {
     height: 130px;
 
     background: #F1F3F6;
-    box-shadow: inset 0 0 15px rgb(55 84 170 / 0%), inset 0 0 20px rgb(255 255 255 / 0%), 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgb(255 255 255), inset 0px 0px 4px rgb(255 255 255 / 20%);
+    box-shadow: inset 0 0 15px rgb(55 84 170 / 0%),
+                inset 0 0 20px rgb(255 255 255 / 0%),
+                7px 7px 15px rgb(55 84 170 / 15%),
+                -7px -7px 20px rgb(255 255 255),
+                inset 0 0 4px rgb(255 255 255 / 20%);
     border-radius: 32px;
+    transition: box-shadow 399ms ease-in-out;
+}
+
+.other > div:hover {
+    text-decoration: none;
+
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0 0 4px rgba(255, 255, 255, .2);
+    transition: box-shadow 399ms ease-in-out;
 }
 
 .other > div > img {
     width: 50%;
+}
+
+@media (max-width: 527px) {
+    .others {
+        justify-content: center;
+    }
 }
 </style>

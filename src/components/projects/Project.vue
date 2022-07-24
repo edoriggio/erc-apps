@@ -1,7 +1,7 @@
 <template>
     <div class="project-card">
         <div class="project-icon" :class="path">
-            <img :src="getIcon(icon)" alt="app icon">
+            <img :src="getIcon(icon)" alt="project icon">
         </div>
 
         <div class="project-title">
@@ -47,10 +47,10 @@ export default {
     border-radius: 25px;
     background-color: #F1F3F6;
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-    inset 0 0 20px rgba(255, 255, 255, 0),
-    7px 7px 15px rgba(55, 84, 170, .15),
-    -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0px 0px 4px rgba(255, 255, 255, .2);
+                inset 0 0 20px rgba(255, 255, 255, 0),
+                7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0 0 4px rgba(255, 255, 255, .2);
 }
 
 .project-icon img {
@@ -94,10 +94,10 @@ export default {
     border-radius: 10px;
     background-color: #F1F3F6;
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-    inset 0 0 20px rgba(255, 255, 255, 0),
-    7px 7px 15px rgba(55, 84, 170, .15),
-    -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0px 0px 4px rgba(255, 255, 255, .2);
+                inset 0 0 20px rgba(255, 255, 255, 0),
+                7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0 0 4px rgba(255, 255, 255, .2);
 }
 
 a, p {
@@ -122,8 +122,8 @@ a:hover {
     text-decoration: none;
 
     box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
-    inset -7px -7px 20px rgba(255, 255, 255, 1),
-    0px 0px 4px rgba(255, 255, 255, .2);
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0 0 4px rgba(255, 255, 255, .2);
     transition: box-shadow 399ms ease-in-out;
 }
 
@@ -161,10 +161,16 @@ a:hover {
     filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
 }
 
-.classical-music img,
-.pet-companion img,
-.covid-newsletter img {
+.classical-music > img,
+.pet-companion > img,
+.covid-newsletter > img,
+.ai-cup > img {
     margin: 46px 0;
+    width: 90px;
+}
+
+.raytracer > img {
+    margin: 63px 0;
     width: 90px;
 }
 </style>

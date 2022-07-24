@@ -86,7 +86,11 @@ export default {
     width: 200px;
 
     background: #F1F3F6;
-    box-shadow: inset 0 0 15px rgb(55 84 170 / 0%), inset 0 0 20px rgb(255 255 255 / 0%), 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgb(255 255 255), inset 0px 0px 4px rgb(255 255 255 / 20%);
+    box-shadow: inset 0 0 15px rgb(55 84 170 / 0%),
+                inset 0 0 20px rgb(255 255 255 / 0%),
+                7px 7px 15px rgb(55 84 170 / 15%),
+                -7px -7px 20px rgb(255 255 255),
+                inset 0 0 4px rgb(255 255 255 / 20%);
     border-radius: 50px;
 }
 

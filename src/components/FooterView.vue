@@ -2,7 +2,7 @@
     <div class="footer">
         <img src="https://i.postimg.cc/0Q1qcqmZ/logo-clear.png" alt="erc apps logo">
         <socials/>
-        <p>&copy; 2021 ERC Apps</p>
+        <p>&copy; 2022 ERC Apps</p>
     </div>
 </template>
 

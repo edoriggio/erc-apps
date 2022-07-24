@@ -6,7 +6,7 @@
         <div class="body">
             <div class="description">
                 <h2>Description</h2>
-                <p>{{ project.description }}</p>
+                <p class="justify">{{ project.description }}</p>
             </div>
 
             <div class="screenshots">

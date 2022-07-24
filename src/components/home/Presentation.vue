@@ -7,7 +7,7 @@
             </div>
 
             <div class="description">
-                Computer Science Student. Web and Mobile <br> Developer.
+                Computer Engineering Student. Web and Mobile <br> Developer.
                 Into UI/UX design. Creator of <br> ERC Apps.
             </div>
 
@@ -89,10 +89,10 @@ export default {
 
     background: #F1F3F6;
     box-shadow: inset 0 0 15px rgb(55 84 170 / 0%),
-    inset 0 0 20px rgb(255 255 255 / 0%),
-    7px 7px 15px rgb(55 84 170 / 15%),
-    -7px -7px 20px rgb(255 255 255),
-    inset 0px 0px 4px rgb(255 255 255 / 20%);
+                inset 0 0 20px rgb(255 255 255 / 0%),
+                7px 7px 15px rgb(55 84 170 / 15%),
+                -7px -7px 20px rgb(255 255 255),
+                inset 0 0 4px rgb(255 255 255 / 20%);
     transition: box-shadow 399ms ease-in-out;
 
     font-style: normal;
@@ -107,8 +107,8 @@ export default {
 
 .links > a:hover {
     box-shadow: inset 7px 7px 15px rgb(55 84 170 / 15%),
-    inset -7px -7px 20px rgb(255 255 255),
-    0px 0px 4px rgb(255 255 255 / 20%);
+                inset -7px -7px 20px rgb(255 255 255),
+                0 0 4px rgb(255 255 255 / 20%);
     transition: box-shadow 399ms ease-in-out;
 }
 
@@ -130,7 +130,7 @@ export default {
 
     border-radius: 261px;
     box-shadow: 12px 12px 24px #cdcfd1,
-    -12px -12px 24px #ffffff;
+                -12px -12px 24px #ffffff;
 }
 
 @media (max-width: 856px) {

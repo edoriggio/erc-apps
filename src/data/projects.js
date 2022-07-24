@@ -13,7 +13,7 @@ const _projects = [
             '**Map:** A map is displayed for users to see their position at all times, and monuments\' locations are displayed too.',
             '**Tips:** *[Screenshot 3]* In this section, suggestions are given mainly for new students. These range from suitcase preparation, to smog, water and internet issues, electrical socket\'s shape and useful phrases to use in case of an emergency.',
             '**Rewind:** This last section contains photos and videos taken by students of past years. Here the goal is for old students to relive the beautiful moments of the trip. While for new students, is a way to understand what they will do during those 3 weeks.'],
-        'achievements': ['_May 28 2018:_ The app became **n. 74** in the Italian education leaderboard of the App Store']
+        'achievements': ['__May 28 2018:__ The app became **n. 74** in the Italian education leaderboard of the App Store']
     },
     {
         'title': 'Montessori',
@@ -55,7 +55,7 @@ const _projects = [
         'category': 'App Design',
         'macro_category': 'App',
         'icon': 'assets/apps/party.png',
-        'description': 'This application is the mockup of an application that was ment to be developed. Given that the project never saw the light of day, I decided to give it a new life by redesigning it a little bit and developing it. The aim of this app was to give the user the possibility to discover some of the most important and famous music festivals in the world. In this app you would have had the possibility to buy tickets and official merchandising too.',
+        'description': 'This application is the mockup of an application that was meant to be developed. Given that the project never saw the light of day, I decided to give it a new life by redesigning it a little bit and developing it. The aim of this app was to give the user the possibility to discover some of the most important and famous music festivals in the world. In this app you would have had the possibility to buy tickets and official merchandising too.',
         'screenshots': ['assets/apps/party/Party-screen-1.png', 'assets/apps/party/Party-screen-2.png', 'assets/apps/party/Party-screen-3.png'],
         'contents': ['The sections of the application are 3: Homepage, Tickets and Gadgets.',
             '**Homepage (1):** *[Screenshot 1]* In this page, users can see a sort of calendar where the next main events are displayed',
@@ -87,32 +87,47 @@ const _projects = [
         'macro_category': 'Project',
         'icon': 'assets/projects/duplicatefinder.png',
         'description': 'This script logs into a user\'s Instagram account and checks if, given an image, this is already present in the user\'s profile page (i.e. the photo is a possible duplicate). The script runs in the terminal, and operates as follows. The user is asked (if he/she uses the script for the first time) their Instagram username and password, which will then be saved locally in a json file for further reference. It then tries to log in the user\'s Instagram account using Selenium and the Firefox/Chrome driver (In this case drivers for Firefox are used). The script will then prompt the user to input the absolute path of the image they want to check. This can be done in two ways, either by writing down the absolute path of the file, or by dragging and dropping the desired file into the Terminal window. Finally, an image recognition script will begin to run and it will check if the given image is inside the screenshot that was previously taken. The script will then save a .png file in the "Assets" folder containing the screenshot taken earlier and a red square where a possible duplicate was found.',
-        'technologies': ['**Language:** Python 3.6.9',
-            '**External Packages:** Selenium, OpenCV and Pillow',
+        'technologies': ['**Language:** Python v3.6.9',
+            '**External Libraries:** Selenium, OpenCV and Pillow',
             '**Drivers:** Firefox gekodriver'],
+        'screenshots': [],
         'link': ['https://github.com/edoriggio/instagram-duplicates-bot']
     },
     {
         'title': 'Game of Life',
         'path': 'game-of-life',
-        'category': 'Uni Project',
+        'category': 'University Project',
         'macro_category': 'Project',
         'icon': 'assets/projects/gol.png',
-        'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is posible to easily add other kinds of neighborhood and border rules.',
+        'description': 'This program was made by me and [Michele Cattaneo](https://github.com/MicheleCattaneo) as the final project for "Programming Fundamentals 2" (OOP with Java) course at USI. In this project we decided to create an interactive Java program to simulate the famous John Horton Conway\'s Game of Life. With this project we tried to combine everything we learned during this course, such as: inheritance, polymorphism, observer patterns, exception handling... This program is a cellular automata which follows the Game of Life rules. In our case, we decided to use Torus rule to manage borders and Moore neighborhood to define the neighbors of a cell. Furthermore, because of the design of our program (which makes the most out of OOP and inheritance), it is possible to easily add other kinds of neighborhood and border rules.',
         'technologies': ['**Language:** Java',
-            '**External Packages:** Swing'],
+            '**External Library:** Swing'],
+        'screenshots': ['assets/projects/game_of_life/screen.png', 'assets/projects/game_of_life/gun.gif'],
         'link': ['https://github.com/edoriggio/game-of-life']
     },
     {
         'title': 'Checq.me',
         'path': 'checq-me',
-        'category': 'Uni Project',
+        'category': 'University Project',
         'macro_category': 'Project',
         'icon': 'assets/projects/checq-me.svg',
         'description': 'The project our team decided to develop was checq.me. checq.me is a web application that allows students, professors, and teaching assistants to prepare, perform, and grade mastery checks. The main idea of the project is to simplify the process of managing mastery checks. The web application we developed contains all the tools that professors and teaching assistants need to organise and grade mastery checks. Also, tools for students are provided, such as ways to prepare and schedule mastery checks. Our team developed this application with ease of use in mind so that both professors and students can have a pleasant experience. A full description of the project can be found at the [following link](https://www.linkedin.com/pulse/checqme-collaborative-open-source-tool-organise-mastery-riggio/).',
         'technologies': ['**Languages:** JavaScript, HTML, SCSS, and EJS',
-            '**External Packages:** Node.js, Mongoose'],
+            '**External Libraries:** Node.js, Mongoose'],
+        'screenshots': ['assets/projects/checq_me/screen_1.png', 'assets/projects/checq_me/screen_2.png'],
         'link': ['https://github.com/edoriggio/checq.me']
+    },
+    {
+        'title': 'Raytracer',
+        'path': 'raytracer',
+        'category': 'University Project',
+        'macro_category': 'Project',
+        'icon': 'assets/projects/raytracer.svg',
+        'description': 'During the fifth semester of university, in the Computer Graphics course, the professor made us implement a raytracer from scratch in C++. This raytracer is able to render cones, spheres, and planes. These shapes can have custom materials (such as matte, translucent, mirror, and glass) and textures. To simulate the light effects on the objects we used the Phong lighting model and shadows. In addition, I\'ve also implemented tone mapping, gamma correction, and the Fresnel effect. Finally, the raytracer is also able to render a 1024x768 60FPS video in which the light sources move in a programmable pattern. The output of the raytracer can be seen in the assets below.',
+        'screenshots': ['assets/projects/raytracer/raytracer_1.gif', 'assets/projects/raytracer/raytracer_2.png'],
+        'technologies': ['**Language:** C++11',
+            '**External Library:** OpenGL Mathematics (GLM)'],
+        'link': ['https://github.com/edoriggio/raytracer']
     },
     {
         'title': 'Classical Music',
@@ -147,9 +162,21 @@ const _projects = [
         'competition': '[#CodeVsCovid19](https://www.codevscovid19.org/) - Online hackathon organized by Hack Zurich and ETH Zurich',
         'description': 'In a period as delicate as the one we are living in right now, being able to have the correct information is of crucial importance. This is why I decided to create this project. I wanted to bring data and information directly to the user in a visually pleasing and compact form, without making them search the whole internet just to find some extremely fragmented and difficult to read data. Users can subscribe to the newsletter through a webpage. Here they are requested to input their email address and by clicking on the following field, an overlay appears prompting them to choose from a list of over 200 countries, of which they would like to receive data and news. The countries selected can be more than one, and there is also the possibility to choose the option "World" – so that the user can receive data and news about COVID-19 from all around the world. Once the user has completed the signup process, his job is done. Every day, at around 6pm, an email will be sent automatically to his inbox. The email will contain data regarding the spread of COVID-19 in the selected countries with the aid of graphs, and links to the most recent news articles. The total duration of this competition was of 72 hours.',
         'screenshots': [],
-        'technologies': ['**Language:** Python 3.8.2 and Node.js 12.16.3',
-            '**External Packages:** Mailchimp API, Plotly'],
+        'technologies': ['**Languages:** Python v3.8.2, Node.js v12.16.3',
+            '**External Libraries:** Mailchimp API, Plotly'],
         'link': ['https://github.com/edoriggio/covid19-daily-newsletter']
+    },
+    {
+        'title': 'TSP AI Cup',
+        'path': 'ai-cup',
+        'category': 'University Competition',
+        'macro_category': 'Competition',
+        'icon': 'assets/competitions/ai_cup.svg',
+        'competition': '[USI 16th Edition AI Cup](https://search.usi.ch/it/corsi/35263621/artificial-intelligence) - Euclidean Travelling Salesman Problem (TSP) competition.',
+        'description': 'The purpose of this competition was to find the shortest possible tours given a number of Euclidean TSP problems. In order to do so, we had to propose, implement and test one or more heuristic algorithms learned during the semester. I\'ve decided to implement the [Best Nearest Neighbors](https://en.wikipedia.org/wiki/Nearest_neighbor_search) heuristic algorithm and the [2.5-opt](https://tsp-basics.blogspot.com/2017/03/25-opt.html) optimizer. The combination of the two algorithms mentioned above made me reach an average gap of 4.2% between the best possible solution and my solution.',
+        'screenshots': [],
+        'technologies': ['**Language:** C++11'],
+        'link': ['https://github.com/edoriggio/ai-cup']
     }
 ]
 

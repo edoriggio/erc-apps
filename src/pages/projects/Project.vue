@@ -6,7 +6,14 @@
         <div class="body">
             <div class="description">
                 <h2>Description</h2>
-                <span v-html="project.description"/>
+                <span class="justify" v-html="project.description"/>
+            </div>
+
+            <div v-if="project.screenshots.length > 0" class="screenshots">
+                <h2>Screenshots</h2>
+                <div class="images">
+                    <img v-for="image in project.screenshots" :src="getIcon(image)" alt="" :key="image">
+                </div>
             </div>
 
             <div class="tecnologies">
@@ -20,8 +27,8 @@
 
             <div class="github">
                 <h2>GitHub</h2>
-                <span>A more detailed description of the project can be found in the</span>
-                <a :href="project.link" target="_blank">GitHub repo</a>
+                <span>A more detailed description of the project can be found in the</span>&nbsp;
+                <a :href="project.link" target="_blank">GitHub repo</a>.
             </div>
         </div>
     </div>
@@ -45,7 +52,12 @@ export default {
     },
     created() {
         this.technologies = this.project.technologies
-    }
+    },
+    methods: {
+        getIcon(icon) {
+            return require(`@/${icon}`)
+        }
+    },
 }
 </script>
 
@@ -71,8 +83,9 @@ li {
     color: #000000;
 }
 
-.tecnologies > p {
+.tecnologies > ul > li {
     margin-bottom: -3px;
+    text-align: left !important;
 }
 
 .images {
@@ -109,5 +122,24 @@ a:active {
 
 a:hover {
     color: #3776AB;
+}
+
+.images {
+    margin-top: 0 !important;
+
+    gap: 40px 80px;
+}
+
+.images > img {
+    width: auto !important;
+    height: 300px !important;
+
+    border-radius: 10px;
+
+    transition: transform 0.25s ease-in-out;
+}
+
+.images > img:hover {
+    transform: scale(2);
 }
 </style>

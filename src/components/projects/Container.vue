@@ -79,4 +79,10 @@ export default {
 
     gap: 50px 70px;
 }
+
+@media (max-width: 962px) {
+    .projects {
+        justify-content: center;
+    }
+}
 </style>

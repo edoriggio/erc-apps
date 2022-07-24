@@ -11,7 +11,7 @@
 
             <div class="description">
                 <h2>Description</h2>
-                <span v-html="project.description"/>
+                <span class="justify" v-html="project.description"/>
             </div>
 
             <div v-if="project.screenshots.length > 0" class="screenshots">
@@ -32,8 +32,8 @@
 
             <div v-if="project.link.length > 0" class="github">
                 <h2>GitHub</h2>
-                <span>A more detailed description of the project can be found in the</span>
-                <a :href="project.link" target="_blank">GitHub repo</a>
+                <span>A more detailed description of the project can be found in the</span>&nbsp;
+                <a :href="project.link" target="_blank">GitHub repo</a>.
             </div>
         </div>
     </div>

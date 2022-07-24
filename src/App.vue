@@ -48,6 +48,12 @@ body {
     overflow-x: hidden;
     background-color: #f1f3f6;
 }
+
+.justify {
+    text-align: justify;
+    display: table-row;
+    text-align-last: left;
+}
 </style>
 
 <style scoped>
