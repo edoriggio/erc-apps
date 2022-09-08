@@ -10,14 +10,14 @@
                 Software and Data Engineering at <a href="https://www.usi.ch"><b>Università della Svizzera Italiana</b>
                 </a> in Lugano, Switzerland.
                 <br><br>
-                In July 2022 I received a Bachelor of Science in Computer Science degree at <a href="https://www.usi.ch">
+                In July 2022 I received a Bachelor of Science degree in Computer Science from <a href="https://www.usi.ch">
                 <b>Università della Svizzera Italiana</b></a> in Lugano, Switzerland. In July 2019 I graduated from
                 <a href="https://www.convittonazionaleroma.edu.it/nuovosito/"><b> Convitto Nazionale “Vittorio Emanuele
                 II” di Roma</b></a>, a highschool in Rome. In this highschool I followed a study career called
                 "Scientifico Internazionale ad Opzione Lingua Cinese", where I studied Chinese as a second language
                 and went to China every year for four weeks (first two years to Beijing and the next two years to
                 Shanghai). During the fourth year of highschool, I went to Shanghai for six months. During that year I
-                also passed <b>HSK 4 in Chinese</b> (CEFR: B2) and <b>CAE in English</b> (CEFR: C1).
+                was also awarded the <b>HSK 4 in Chinese</b> (CEFR: B2) and the <b>CAE in English</b> (CEFR: C1).
                 <br><br>
                 My main passion is informatics, but I also like UI/UX design and technology in general.
                 I am experienced in web and app development.

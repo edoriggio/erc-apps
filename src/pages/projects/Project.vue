@@ -139,7 +139,10 @@ a:hover {
     transition: transform 0.25s ease-in-out;
 }
 
-.images > img:hover {
-    transform: scale(2);
+@media (min-width: 900px) {
+    .images > img:hover {
+        transform: scale(2);
+    }
 }
+
 </style>
