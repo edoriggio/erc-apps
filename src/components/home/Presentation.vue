@@ -7,7 +7,7 @@
             </div>
 
             <div class="description">
-                Computer Engineering Student. Web and Mobile <br> Developer.
+                Software Engineering Student. Web and Mobile <br> Developer.
                 Into UI/UX design. Creator of <br> ERC Apps.
             </div>
 

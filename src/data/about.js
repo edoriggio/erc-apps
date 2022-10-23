@@ -80,6 +80,12 @@ const _skills = [
         ]
     },
     {
+        'name': 'Scala3',
+        'rate': 2,
+        'color': ['DC322F'],
+        'icon': 'scala'
+    },
+    {
         'name': 'C/C++',
         'rate': 3,
         'color': ['00599c'],
@@ -128,12 +134,6 @@ const _skills = [
         ]
     },
     {
-        'name': 'Docker',
-        'rate': 1,
-        'color': ['2ec0ff'],
-        'icon': 'docker'
-    },
-    {
         'name': 'JavaScript',
         'rate': 4,
         'color': ['F7DF1E'],
@@ -164,7 +164,13 @@ const _skills = [
         'rate': 4,
         'color': ['3178C6'],
         'icon': 'typescript'
-    }
+    },
+    {
+        'name': 'MATLAB',
+        'rate': 1,
+        'color': ['1E4B83'],
+        'icon': 'matrix'
+    },
 ]
 
 const _languages = [
@@ -274,6 +280,12 @@ const _experience = [
         'rate': 2,
         'color': ['FF6C37'],
         'icon': 'postman'
+    },
+    {
+        'name': 'Docker',
+        'rate': 2,
+        'color': ['2ec0ff'],
+        'icon': 'docker'
     }
 ]
 
