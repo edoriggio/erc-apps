@@ -142,6 +142,10 @@ export default {
 
                 this.project.competition = this.parseMarkdown(this.project.competition)
                 this.project.description = this.parseMarkdown(this.project.description)
+
+                for (let i = 0; i < this.project.achievements.length; i++) {
+                  this.project.achievements[i] = this.parseMarkdown(this.project.achievements[i])
+                }
             }
         },
         getIcon(icon) {

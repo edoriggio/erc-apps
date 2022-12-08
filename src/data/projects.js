@@ -139,7 +139,8 @@ const _projects = [
         'description': 'In this competition, candidates where asked to design an application for people who love music and what to increase their knowledge about the subject. The app had to be interactive and engaging. The three screens we had to design were: Homepage, where users could discover new content (such as music, podcasts...); Learn, where users had the possibility to study more in depth the world of music; and finally a Paywall, where users would land if they decided to go with the Pro version of the application. The total duration of the competition was of three days.',
         'screenshots': ['assets/competitions/designflows2019/designflows2019-screen-1.png', 'assets/competitions/designflows2019/designflows2019-screen-2.png', 'assets/competitions/designflows2019/designflows2019-screen-3.png'],
         'technologies': [],
-        'link': []
+        'link': [],
+        'achievements': []
     },
     {
         'title': 'Pet Companion',
@@ -151,7 +152,8 @@ const _projects = [
         'description': 'During this competition, we were asked to create the design for an application for those passionate about pets, and who want to learn more about domestic animals. The app had to be divided into three screens: Discover, where users are recommended content; Maps, where users can find follow an educational track and test their knowledge on pets; and a Paywall, where the user lands when they want to subscribe - if they haven\'t done already. The total duration of this competition was of three days.',
         'screenshots': ['assets/competitions/designflows2020/designflows2020-screen-1.png', 'assets/competitions/designflows2020/designflows2020-screen-2.png', 'assets/competitions/designflows2020/designflows2020-screen-3.png'],
         'technologies': [],
-        'link': []
+        'link': [],
+        'achievements': []
     },
     {
         'title': 'COVID Newsletter',
@@ -164,7 +166,22 @@ const _projects = [
         'screenshots': [],
         'technologies': ['**Languages:** Python v3.8.2, Node.js v12.16.3',
             '**External Libraries:** Mailchimp API, Plotly'],
-        'link': ['https://github.com/edoriggio/covid19-daily-newsletter']
+        'link': ['https://github.com/edoriggio/covid19-daily-newsletter'],
+        'achievements': []
+    },
+    {
+        'title': 'Formula USI',
+        'path': 'formula-usi',
+        'category': '#FormulaUSI 2022',
+        'macro_category': 'Competition',
+        'icon': 'assets/competitions/formulausi.png',
+        'competition': '[#FormulaUSI 2022](https://formulausi.si.usi.ch/2022/) - In-person Hackathon organized by Università della Svizzera Italiana',
+        'description': 'My team – composed of Claudio Milanesi, Luca de Felice, Matteo Martinoli, and I – participated in the second edition of #FormulaUSI, an event organised by the Software Institute at Università della Svizzera Italiana. The goal of this event was to develop a Machine Learning model for a miniature self-driving race car during the course of three days. With the car and our trained models we managed to win all of the prizes. Details on this event can be found in [this news article on the competition](https://www.usi.ch/en/feeds/23569).',
+        'screenshots': [],
+        'technologies': ['**Languages:** Python v3.7',
+            '**External Libraries:** tensorflow v2.2.0'],
+        'link': [],
+        'achievements': ['__1st place:__ Head-to-Head tournament', '__Winners:__ "Best Lap Time" challenge *[with a time of 10.823"]*', '__Winners:__ "Best Average Time" challenge *[with a time of 11.368"]*']
     },
     {
         'title': 'TSP AI Cup',
@@ -176,7 +193,8 @@ const _projects = [
         'description': 'The purpose of this competition was to find the shortest possible tours given a number of Euclidean TSP problems. In order to do so, we had to propose, implement and test one or more heuristic algorithms learned during the semester. I\'ve decided to implement the [Best Nearest Neighbors](https://en.wikipedia.org/wiki/Nearest_neighbor_search) heuristic algorithm and the [2.5-opt](https://tsp-basics.blogspot.com/2017/03/25-opt.html) optimizer. The combination of the two algorithms mentioned above made me reach an average gap of 4.2% between the best possible solution and my solution.',
         'screenshots': [],
         'technologies': ['**Language:** C++11'],
-        'link': ['https://github.com/edoriggio/ai-cup']
+        'link': ['https://github.com/edoriggio/ai-cup'],
+        'achievements': []
     }
 ]
 

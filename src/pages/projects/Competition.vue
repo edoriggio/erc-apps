@@ -35,6 +35,15 @@
                 <span>A more detailed description of the project can be found in the</span>&nbsp;
                 <a :href="project.link" target="_blank">GitHub repo</a>.
             </div>
+
+            <div v-if="project.achievements.length > 0" class="contents">
+                <h2>Achievements</h2>
+                <ul>
+                    <li v-for="achievement in achievements" :key="achievement">
+                        <span v-html="achievement"/>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -52,11 +61,13 @@ export default {
     },
     data() {
         return {
-            technologies: Array
+            technologies: Array,
+            achievements: Array
         }
     },
     created() {
         this.technologies = this.project.technologies
+        this.achievements = this.project.achievements
     },
     methods: {
         getIcon(icon) {

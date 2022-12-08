@@ -100,13 +100,13 @@ export default {
 </style>
 
 <style>
-.chinaconvitto-logo {
+.chinaconvitto-logo,
+.checq-me-logo,
+.formula-usi-logo {
     width: 70% !important;
 }
 
 .checq-me-logo {
-    width: 70% !important;
-
     filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
 }
 </style>

@@ -16,6 +16,12 @@ const _skills = [
                 'path': 'covid-newsletter',
                 'category': 'Competitions',
                 'icon': 'assets/competitions/newsletter.png'
+            },
+            {
+                'name': '#FormulaUSI 2022',
+                'path': 'formula-usi',
+                'category': 'Competitions',
+                'icon': 'assets/competitions/formulausi.png'
             }
         ]
     },

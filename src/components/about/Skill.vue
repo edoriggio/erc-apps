@@ -250,6 +250,13 @@ export default {
     filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
 }
 
+#-formulausi-2022 > img {
+  width: 30px;
+  height: 25px;
+  margin-right: 19px;
+  margin-left: 6px;
+}
+
 .cw-rotate {
     transform: rotate(0deg);
     transition: transform 0.2s ease-in-out;

@@ -169,6 +169,11 @@ a:hover {
     width: 90px;
 }
 
+.formula-usi > img {
+  margin: 54px 0;
+  width: 127px;
+}
+
 .raytracer > img {
     margin: 63px 0;
     width: 90px;
