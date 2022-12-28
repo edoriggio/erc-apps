@@ -157,7 +157,7 @@ export default {
 
 <style scoped>
 div > h2 {
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 .others {

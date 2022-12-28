@@ -42,12 +42,12 @@ export default {
     display: flex;
     flex-direction: row;
 
-    z-index: 1;
+    z-index: 1000;
 
     justify-content: center;
     align-items: center;
 
-    margin-top: 35px;
+    margin-top: 35px !important;
 
     height: 80px;
     width: 90%;
@@ -57,7 +57,7 @@ export default {
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+    inset 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 .menu a {
@@ -88,7 +88,7 @@ export default {
 }
 
 img {
-    margin-bottom: -3px;
+    margin-bottom: -3px !important;
     height: 80px;
 }
 </style>

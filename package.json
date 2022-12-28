@@ -18,6 +18,7 @@
     "vue": "^2.6.11",
     "vue-flag-icon": "^2.1.0",
     "vue-router": "^3.5.3",
+    "vuetify": "^2.6.0",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -30,8 +31,12 @@
     "eslint-plugin-vue": "^6.2.2",
     "execa": "^4.0.0",
     "node-emoji": "^1.10.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
     "vue-cli-plugin-gh-pages-auto-deploy": "~0.5.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
   },
   "eslintConfig": {
     "root": true,

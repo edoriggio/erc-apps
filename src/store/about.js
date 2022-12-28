@@ -1,6 +1,7 @@
 import about from '@/data/about'
-import languages from "@/data/about";
+import languages from "@/data/about"
 import experience from "@/data/about"
+
 
 const state = {
     skills: [],

@@ -28,8 +28,8 @@ export default {
     height: 100px;
     width: 90%;
 
-    margin-bottom: 50px;
-    margin-top: 90px;
+    margin-bottom: 50px !important;
+    margin-top: 90px !important;
 
     background: #F1F3F6;
     box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
@@ -39,11 +39,11 @@ export default {
 }
 
 .footer > img {
-    margin-left: 40px;
+    margin-left: 40px !important;
 }
 
 .footer > p {
-    margin-right: 50px;
+    margin-right: 50px !important;
 
     font-family: Consolas, monospace;
     font-style: normal;
@@ -69,12 +69,12 @@ img {
 
     .footer > img,
     .footer > p {
-        margin: 0;
+        margin: 0 !important;
     }
 
     .footer > p {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
     }
 }
 </style>
