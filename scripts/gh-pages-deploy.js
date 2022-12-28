@@ -12,6 +12,8 @@ const thirdLog = `${emoji.get('rocket')} ${chalk.green('Your app successfully de
         await execa.command('git checkout --orphan gh-pages')
         console.log(firstLog)
         await execa.command('npm run build', {stdio: 'inherit'})
+        await execa.command('touch ./dist/CNAME')
+        await execa.command('echo www.erc-apps.com > CNAME')
         await execa.command('git --work-tree dist add --all')
         await execa.command('git --work-tree dist commit -m "gh-pages"')
         console.log(secondLog)
