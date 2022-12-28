@@ -74,7 +74,7 @@ export default {
 
     gap: 10px 0;
 
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 
 p,
@@ -89,7 +89,7 @@ li {
 }
 
 .contents > p {
-    margin-bottom: -3px;
+    margin-bottom: -3px !important;
 }
 
 .images {
@@ -99,7 +99,7 @@ li {
     justify-content: center;
     align-items: center;
 
-    margin-top: -30px;
+    margin-top: -30px !important;
 }
 
 .images > img {

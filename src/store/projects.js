@@ -1,5 +1,6 @@
 import projects from '@/data/projects'
 
+
 const state = {
     all: [],
     apps: [],
