@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <div class="title">
+        <div class="title-new">
             <router-link to="/projects" v-text="category"/>
             <p>/</p>
             <p class="name">{{ title }}</p>
@@ -39,10 +39,10 @@ export default {
 
     gap: 80px 0;
 
-    margin-top: 50px;
+    margin-top: 50px !important;
 }
 
-.title {
+.title-new {
     display: flex;
     flex-direction: row;
 
@@ -52,8 +52,8 @@ export default {
     gap: 0 10px;
 }
 
-.title > a,
-.title > p:not(.name) {
+.title-new > a,
+.title-new > p:not(.name) {
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -63,7 +63,7 @@ export default {
     color: #AFAFAF;
 }
 
-.title > a:hover {
+.title-new > a:hover {
     text-decoration: underline;
 }
 

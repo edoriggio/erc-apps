@@ -68,7 +68,7 @@ export default {
 
     gap: 10px 0;
 
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 
 p,
@@ -84,7 +84,6 @@ li {
 }
 
 .tecnologies > ul > li {
-    margin-bottom: -3px;
     text-align: left !important;
 }
 
@@ -94,8 +93,6 @@ li {
 
     justify-content: center;
     align-items: center;
-
-    margin-top: -30px;
 }
 
 .images > img {

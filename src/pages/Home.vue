@@ -23,7 +23,7 @@ export default {
     right: 0;
     bottom: 0;
 
-    margin: auto;
+    margin: auto !important;
 
     height: 300px;
     width: 800px;
@@ -37,7 +37,7 @@ export default {
         height: calc(100vh - 100px);
         width: 100vw;
 
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
 }
 </style>

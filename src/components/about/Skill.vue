@@ -9,17 +9,19 @@
         <div v-else :id="`${id_name}`" class="back" @click="toggle_dropdown()">
             <flag :iso="icon" :squared="false"/>
             <span><p>{{ name }}</p></span>
-            <span class="secondary-span"><p class="secondary">{{ rating }}</p></span>
+            <span class="secondary-span"><p class="secondary-text">{{ rating }}</p></span>
         </div>
 
         <div v-if="projects" :id="`dropdown-${id_name}`" class="back-card">
-            <div v-for="project in projects" :key="project.path" class="row" :id="project.name.replaceAll(/[^\w+/]/g, '-').toLowerCase()">
+            <div v-for="project in projects" :key="project.path" class="row"
+                 :id="project.name.replaceAll(/[^\w+/]/g, '-').toLowerCase()">
                 <img class="icon" :src="getIcon(project.icon)" alt="project icon">
 
-                <div class="title">
+                <div class="title-new">
                     <p class="name">{{ project.category }}</p>
                     <p>&nbsp;/&nbsp;</p>
-                    <router-link v-if="!project.path.includes('https://')" :to="`/projects/${project.path}`" v-text="project.name"/>
+                    <router-link v-if="!project.path.includes('https://')" :to="`/projects/${project.path}`"
+                                 v-text="project.name"/>
                     <a v-else :href="project.path" target="_blank">{{ project.name }}</a>
                 </div>
             </div>
@@ -94,10 +96,10 @@ export default {
 
     background-color: #F1F3F6;
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-                inset 0 0 20px rgba(255, 255, 255, 0),
-                7px 7px 15px rgba(55, 84, 170, .15),
-                -7px -7px 20px rgba(255, 255, 255, 1),
-                inset 0 0 4px rgba(255, 255, 255, .2);
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0 0 4px rgba(255, 255, 255, .2);
 }
 
 .skill-elements {
@@ -124,7 +126,7 @@ export default {
 
     align-items: flex-start;
 
-    margin-top: 10px;
+    margin-top: 10px !important;
 
     padding: 20px 20px;
     gap: 20px 0;
@@ -136,8 +138,8 @@ export default {
 
 .has-projects:hover {
     box-shadow: inset 7px 7px 15px rgb(55 84 170 / 15%),
-                inset -7px -7px 20px rgb(255 255 255),
-                0 0 4px rgb(255 255 255 / 20%);
+    inset -7px -7px 20px rgb(255 255 255),
+    0 0 4px rgb(255 255 255 / 20%);
     transition: box-shadow 399ms ease-in-out;
 
     cursor: pointer;
@@ -150,22 +152,22 @@ export default {
 .back > span > p {
     width: max-content;
 
-    margin-right: 0;
+    margin-right: 0 !important;
 
-    font-style: normal;
+    font-style: normal !important;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18px !important;
 
     color: black;
 }
 
 .open > i:last-child {
-    margin-left: auto;
+    margin-left: auto !important;
 }
 
 .dropdown-button {
     text-decoration: none !important;
-    font-weight: bold;
+    font-weight: bold !important;
     font-size: 20px !important;
 }
 
@@ -182,13 +184,13 @@ export default {
     display: flex;
     flex-direction: row;
 
-    align-items: center;
+    align-items: center !important;
     justify-content: flex-start;
 
     height: 30px;
 }
 
-.title {
+.title-new {
     display: flex;
     flex-direction: row;
 
@@ -196,26 +198,26 @@ export default {
     justify-content: center;
 }
 
-.title > p,
-.title > a {
-    margin: auto;
+.title-new > p,
+.title-new > a {
+    margin: auto !important;
 }
 
-.title > p {
-    color: #AFAFAF
+.title-new > p {
+    color: #AFAFAF !important;
 }
 
-.title > a {
+.title-new > a {
     text-decoration: none;
 }
 
 .icon {
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 
 #china-convitto > img {
-    margin-right: 20px;
-    margin-left: 6px;
+    margin-right: 20px !important;
+    margin-left: 6px !important;
 }
 
 #montessori > img,
@@ -224,15 +226,15 @@ export default {
 #duplicate-finder > img,
 #tsp-ai-cup > img,
 #raytracer > img {
-    margin-right: 25px;
-    margin-left: 10px;
+    margin-right: 25px !important;
+    margin-left: 10px !important;
 }
 
 #game-of-life > img,
 #checq-me > img,
 #erc-apps > img {
-    margin-right: 20px;
-    margin-left: 5px;
+    margin-right: 20px !important;
+    margin-left: 5px !important;
 }
 
 #montessori > img,
@@ -251,10 +253,10 @@ export default {
 }
 
 #-formulausi-2022 > img {
-  width: 30px;
-  height: 25px;
-  margin-right: 19px;
-  margin-left: 6px;
+    width: 30px;
+    height: 25px;
+    margin-right: 19px !important;
+    margin-left: 6px !important;
 }
 
 .cw-rotate {
@@ -267,7 +269,7 @@ export default {
     transition: transform 0.2s ease-in-out;
 }
 
-.secondary {
+.secondary-text {
     color: #AFAFAF !important;
 
     font-weight: normal !important;
@@ -281,11 +283,11 @@ export default {
 
 @media (max-width: 551px) {
     .back > i:last-child {
-        margin-left: auto;
+        margin-left: auto !important;
     }
 
     .back > .secondary-span {
-        margin-left: auto;
+        margin-left: auto !important;
     }
 }
 </style>

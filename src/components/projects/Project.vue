@@ -54,7 +54,7 @@ export default {
 }
 
 .project-icon img {
-    margin: 30px 0;
+    margin: 30px 0 !important;
     width: 120px;
 }
 
@@ -68,7 +68,7 @@ export default {
 }
 
 .project-category {
-    margin-top: 5px;
+    margin-top: 5px !important;
 
     font-style: normal;
     font-weight: normal;
@@ -85,8 +85,8 @@ export default {
     justify-content: center;
     align-items: center;
 
-    margin-top: 35px;
-    margin-bottom: 20px;
+    margin-top: 35px !important;
+    margin-bottom: 20px !important;
 
     width: 170px;
     height: 34px;
@@ -101,7 +101,7 @@ export default {
 }
 
 a, p {
-    margin: auto;
+    margin: auto !important;
 
     font-style: normal;
     font-weight: bold;
@@ -115,7 +115,7 @@ a, p {
 }
 
 p {
-    margin-top: 7px;
+    margin-top: 7px !important;
 }
 
 a:hover {
@@ -128,32 +128,32 @@ a:hover {
 }
 
 .montessori > img {
-    margin: 55px 0;
+    margin: 55px 0 !important;
     width: 80px;
 }
 
 .party > img {
-    margin: 50.9px 0;
+    margin: 50.9px 0 !important;
     width: 80px;
 }
 
 .usi-productivity > img {
-    margin: 57px 0;
+    margin: 57px 0 !important;
     width: 90px;
 }
 
 .airlinr > img {
-    margin: 36px 0;
+    margin: 36px 0 !important;
     width: 110px;
 }
 
 .duplicate-finder > img {
-    margin: 51px 0;
+    margin: 51px 0 !important;
     width: 80px;
 }
 
 .game-of-life > img {
-    margin: 68px 0;
+    margin: 68px 0 !important;
     width: 100px;
 }
 
@@ -165,17 +165,17 @@ a:hover {
 .pet-companion > img,
 .covid-newsletter > img,
 .ai-cup > img {
-    margin: 46px 0;
+    margin: 46px 0 !important;
     width: 90px;
 }
 
 .formula-usi > img {
-  margin: 54px 0;
+  margin: 54px 0 !important;
   width: 127px;
 }
 
 .raytracer > img {
-    margin: 63px 0;
+    margin: 63px 0 !important;
     width: 90px;
 }
 </style>

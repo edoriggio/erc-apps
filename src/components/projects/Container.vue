@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="title">
+        <h2 class="title-new">
             {{ title }}
         </h2>
 
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style scoped>
-.title {
+.title-new-new {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;

@@ -1,13 +1,15 @@
 <template>
-    <div class="app">
-        <menu-bar/>
+    <v-app>
+        <div class="app">
+            <menu-bar/>
 
-        <div class="body">
-            <router-view/>
+            <div class="body">
+                <router-view/>
+            </div>
+
+            <footer-view v-if="name !== 'home'"/>
         </div>
-
-        <footer-view v-if="name !== 'home'"/>
-    </div>
+    </v-app>
 </template>
 
 <script>
@@ -37,22 +39,43 @@ export default {
 </script>
 
 <style>
+* {
+    margin: revert !important;
+    line-height: normal !important;
+}
+
 html {
-    font-family: Proxima Nova, sans-serif; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: Proxima Nova, sans-serif !important; /* 1 */
+    -ms-text-size-adjust: 100% !important; /* 2 */
+    -webkit-text-size-adjust: 100% !important; /* 2 */
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #f1f3f6;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+    background-color: #f1f3f6 !important;
 }
 
 .justify {
     text-align: justify;
     display: table-row;
     text-align-last: left;
+}
+
+.v-application p {
+    margin: 0 !important;
+}
+
+a {
+    color: #000000 !important;
+}
+
+a:hover {
+    color: #3776AB !important;
+}
+
+.theme--light.v-application {
+    background-color: transparent !important;
 }
 </style>
 
@@ -67,7 +90,7 @@ body {
 }
 
 .body {
-    margin-top: 170px;
+    margin-top: 170px !important;
     width: 80vw;
 }
 </style>

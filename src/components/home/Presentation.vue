@@ -60,7 +60,7 @@ export default {
 }
 
 .name > h1 {
-    margin-top: 5px;
+    margin-top: 5px !important;
 
     font-size: 35px;
 }
@@ -76,7 +76,7 @@ export default {
 
     gap: 0 20px;
 
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 .links > a {
