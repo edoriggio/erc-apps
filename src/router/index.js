@@ -5,6 +5,7 @@ import Home from '@/pages/Home'
 import Projects from '@/pages/Projects'
 import ProjectPage from '@/pages/ProjectPage'
 import About from '@/pages/About'
+import DemoPage from "@/pages/DemoPage.vue";
 
 Vue.use(Router)
 
@@ -27,6 +28,12 @@ export default new Router({
             name: 'project',
             props: true,
             component: ProjectPage
+        },
+        {
+            path: '/demos/:demo_path',
+            name: 'project',
+            props: true,
+            component: DemoPage
         },
         {
             path: '/about',

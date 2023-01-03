@@ -13,7 +13,8 @@ const _projects = [
             '**Map:** A map is displayed for users to see their position at all times, and monuments\' locations are displayed too.',
             '**Tips:** *[Screenshot 3]* In this section, suggestions are given mainly for new students. These range from suitcase preparation, to smog, water and internet issues, electrical socket\'s shape and useful phrases to use in case of an emergency.',
             '**Rewind:** This last section contains photos and videos taken by students of past years. Here the goal is for old students to relive the beautiful moments of the trip. While for new students, is a way to understand what they will do during those 3 weeks.'],
-        'achievements': ['__May 28 2018:__ The app became **n. 74** in the Italian education leaderboard of the App Store']
+        'achievements': ['__May 28 2018:__ The app became **n. 74** in the Italian education leaderboard of the App Store'],
+        'demo': ''
     },
     {
         'title': 'Montessori',
@@ -32,7 +33,8 @@ const _projects = [
             '**Tutoraggio:** This opens the school\'s electronic register, to check homework, grades, upcoming quizzes and more.',
             '**Orario:** *[Screenshot 3]* This section is the reason why the application was created in the first place. Here students can ask for help in various subjects to professors or older, more competent students.',
             '**Sito Web:** This opens the school\'s official website.'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'Airlinr',
@@ -47,7 +49,8 @@ const _projects = [
             '**Airlines (2):** By clicking on the blue button next to each company, a screen will pop up with all of the airline\'s info. *[Screenshot 2]*',
             '**My Luggage:** *[Screenshot 3]* In this section, users can log their luggage\'s dimensions and compare them with the various airline companies. If the luggage is accepted (for weight and dimension), a blue checkmark will appear near the airline name.',
             '**Favorites:** Favorites airline companies will appear here.'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'Party!',
@@ -62,7 +65,8 @@ const _projects = [
             '**Homepage (2):** By clicking on them the user can get more info on the festival, as well as buy tickets for that event. *[Screenshot 2]*',
             '**Tickets:** *[Screenshot 3]* Here users can find tickets for all the available festivals and their price.',
             '**Gadgets:** This is an online shop for official merchandise. Here users can buy gadgets from the festivals\' official stores.'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'USI Productivity',
@@ -78,7 +82,8 @@ const _projects = [
             '**Quick Action:** This is a little popup menu where users can choose between some quick actions, such as "Create a new task", "Start today\'s routine" and "Scan QR-Code".',
             '**Routines:** Here users can select and start their own custom routines. *[Screenshot 2]* This for example, is how a routine would look like. Tasks can either be checked off as done or skipped. Furthermore, breaks of specific times could be added in the routine as well.',
             '**Profile:** The profile section *[Screenshot 3]* is were the user\'s achievements are displayed. Statistics are provided as well, to make the user have a sense of how he/she is spending time.'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'Duplicate Finder',
@@ -91,7 +96,8 @@ const _projects = [
             '**External Libraries:** Selenium, OpenCV and Pillow',
             '**Drivers:** Firefox gekodriver'],
         'screenshots': [],
-        'link': ['https://github.com/edoriggio/instagram-duplicates-bot']
+        'link': ['https://github.com/edoriggio/instagram-duplicates-bot'],
+        'demo': ''
     },
     {
         'title': 'Game of Life',
@@ -103,7 +109,8 @@ const _projects = [
         'technologies': ['**Language:** Java',
             '**External Library:** Swing'],
         'screenshots': ['assets/projects/game_of_life/screen.png', 'assets/projects/game_of_life/gun.gif'],
-        'link': ['https://github.com/edoriggio/game-of-life']
+        'link': ['https://github.com/edoriggio/game-of-life'],
+        'demo': ''
     },
     {
         'title': 'Checq.me',
@@ -115,7 +122,8 @@ const _projects = [
         'technologies': ['**Languages:** JavaScript, HTML, SCSS, and EJS',
             '**External Libraries:** Node.js, Mongoose'],
         'screenshots': ['assets/projects/checq_me/screen_1.png', 'assets/projects/checq_me/screen_2.png'],
-        'link': ['https://github.com/edoriggio/checq.me']
+        'link': ['https://github.com/edoriggio/checq.me'],
+        'demo': ''
     },
     {
         'title': 'Raytracer',
@@ -127,7 +135,38 @@ const _projects = [
         'screenshots': ['assets/projects/raytracer/raytracer_1.gif', 'assets/projects/raytracer/raytracer_2.png'],
         'technologies': ['**Language:** C++11',
             '**External Library:** OpenGL Mathematics (GLM)'],
-        'link': ['https://github.com/edoriggio/raytracer']
+        'link': ['https://github.com/edoriggio/raytracer'],
+        'demo': ''
+    },
+    {
+        'title': 'Rasterizer',
+        'path': 'rasterizer',
+        'category': 'University Project',
+        'macro_category': 'Project',
+        'icon': 'assets/projects/rasterizer.png',
+        'description': '',
+        'screenshots': ['assets/projects/rasterizer/rasterizer_1.png', 'assets/projects/rasterizer/rasterizer_2.gif'],
+        'technologies': [
+            '**Language:** JavaScript',
+            '**External Library:** GLMatrix v2.3.0'
+        ],
+        'link': ['https://github.com/edoriggio/rasterizer'],
+        'demo': 'rasterizer'
+    },
+    {
+        'title': 'Cape Simulation',
+        'path': 'cape',
+        'category': 'University Project',
+        'macro_category': 'Project',
+        'icon': 'assets/projects/cape.png',
+        'description': '',
+        'screenshots': ['assets/projects/cape/cape_1.png', 'assets/projects/cape/cape_2.gif'],
+        'technologies': [
+            '**Language:** JavaScript',
+            '**External Library:** GLMatrix v2.3.0'
+        ],
+        'link': ['https://github.com/edoriggio/cape-simulation'],
+        'demo': 'cape'
     },
     {
         'title': 'Classical Music',
@@ -140,7 +179,8 @@ const _projects = [
         'screenshots': ['assets/competitions/designflows2019/designflows2019-screen-1.png', 'assets/competitions/designflows2019/designflows2019-screen-2.png', 'assets/competitions/designflows2019/designflows2019-screen-3.png'],
         'technologies': [],
         'link': [],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'Pet Companion',
@@ -153,7 +193,8 @@ const _projects = [
         'screenshots': ['assets/competitions/designflows2020/designflows2020-screen-1.png', 'assets/competitions/designflows2020/designflows2020-screen-2.png', 'assets/competitions/designflows2020/designflows2020-screen-3.png'],
         'technologies': [],
         'link': [],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'COVID Newsletter',
@@ -167,7 +208,8 @@ const _projects = [
         'technologies': ['**Languages:** Python v3.8.2, Node.js v12.16.3',
             '**External Libraries:** Mailchimp API, Plotly'],
         'link': ['https://github.com/edoriggio/covid19-daily-newsletter'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     },
     {
         'title': 'Formula USI',
@@ -181,7 +223,8 @@ const _projects = [
         'technologies': ['**Languages:** Python v3.7',
             '**External Libraries:** tensorflow v2.2.0'],
         'link': [],
-        'achievements': ['__1st place:__ Head-to-Head tournament', '__Winners:__ "Best Lap Time" challenge *[with a time of 10.823"]*', '__Winners:__ "Best Average Time" challenge *[with a time of 11.368"]*']
+        'achievements': ['__1st place:__ Head-to-Head tournament', '__Winners:__ "Best Lap Time" challenge *[with a time of 10.823"]*', '__Winners:__ "Best Average Time" challenge *[with a time of 11.368"]*'],
+        'demo': ''
     },
     {
         'title': 'TSP AI Cup',
@@ -194,12 +237,13 @@ const _projects = [
         'screenshots': [],
         'technologies': ['**Language:** C++11'],
         'link': ['https://github.com/edoriggio/ai-cup'],
-        'achievements': []
+        'achievements': [],
+        'demo': ''
     }
 ]
 
 export default {
-    getProjects (cb) {
+    getProjects(cb) {
         cb(_projects)
     }
 }

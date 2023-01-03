@@ -12,9 +12,15 @@
             {{ category }}
         </div>
 
-        <router-link class="project-button" :to="`projects/${path}`">
-            <p>View</p>
-        </router-link>
+        <div class="buttons-wrapper">
+            <router-link class="project-button" :to="`projects/${path}`">
+                <p>View</p>
+            </router-link>
+
+            <router-link v-if="demo !== ''" class="project-button icon-width" :to="`demos/${demo}`">
+                <i class="ri-global-line"/>
+            </router-link>
+        </div>
     </div>
 </template>
 
@@ -25,7 +31,8 @@ export default {
         icon: String,
         title: String,
         category: String,
-        path: String
+        path: String,
+        demo: String
     },
     methods: {
         getIcon(icon) {
@@ -78,6 +85,22 @@ export default {
     color: #868686;
 }
 
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: stretch;
+    gap: 15px;
+
+    margin-top: 35px !important;
+    margin-bottom: 20px !important;
+
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    width: 100%;
+}
+
 .project-button {
     display: flex;
     flex-direction: row;
@@ -85,19 +108,25 @@ export default {
     justify-content: center;
     align-items: center;
 
-    margin-top: 35px !important;
-    margin-bottom: 20px !important;
-
-    width: 170px;
+    width: 100%;
     height: 34px;
 
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #F1F3F6;
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
                 inset 0 0 20px rgba(255, 255, 255, 0),
                 7px 7px 15px rgba(55, 84, 170, .15),
                 -7px -7px 20px rgba(255, 255, 255, 1),
                 inset 0 0 4px rgba(255, 255, 255, .2);
+}
+
+.icon-width {
+    width: 50px !important;
+    font-weight: normal;
+}
+
+.icon-width:hover {
+    color: #000000 !important;
 }
 
 a, p {
@@ -166,6 +195,16 @@ a:hover {
 .covid-newsletter > img,
 .ai-cup > img {
     margin: 46px 0 !important;
+    width: 90px;
+}
+
+.cape > img {
+    margin: 56px 0 !important;
+    width: 59px;
+}
+
+.rasterizer > img {
+    margin: 56px 0 !important;
     width: 90px;
 }
 

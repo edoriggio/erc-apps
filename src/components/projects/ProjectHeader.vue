@@ -60,7 +60,7 @@ export default {
 
     text-decoration: none;
 
-    color: #AFAFAF;
+    color: #AFAFAF !important;
 }
 
 .title-new > a:hover {
@@ -108,5 +108,9 @@ export default {
 
 .checq-me-logo {
     filter: invert(20%) sepia(63%) saturate(1709%) hue-rotate(216deg) brightness(95%) contrast(88%);
+}
+
+.cape-logo {
+    width: 35% !important;
 }
 </style>
