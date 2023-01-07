@@ -212,6 +212,20 @@ const _projects = [
         'demo': ''
     },
     {
+        'title': 'TSP AI Cup',
+        'path': 'ai-cup',
+        'category': 'University Competition',
+        'macro_category': 'Competition',
+        'icon': 'assets/competitions/ai_cup.svg',
+        'competition': '[USI 16th Edition AI Cup](https://search.usi.ch/it/corsi/35263621/artificial-intelligence) - Euclidean Travelling Salesman Problem (TSP) competition.',
+        'description': 'The purpose of this competition was to find the shortest possible tours given a number of Euclidean TSP problems. In order to do so, we had to propose, implement and test one or more heuristic algorithms learned during the semester. I\'ve decided to implement the [Best Nearest Neighbors](https://en.wikipedia.org/wiki/Nearest_neighbor_search) heuristic algorithm and the [2.5-opt](https://tsp-basics.blogspot.com/2017/03/25-opt.html) optimizer. The combination of the two algorithms mentioned above made me reach an average gap of 4.2% between the best possible solution and my solution.',
+        'screenshots': [],
+        'technologies': ['**Language:** C++11'],
+        'link': ['https://github.com/edoriggio/ai-cup'],
+        'achievements': [],
+        'demo': ''
+    },
+    {
         'title': 'Formula USI',
         'path': 'formula-usi',
         'category': '#FormulaUSI 2022',
@@ -226,20 +240,6 @@ const _projects = [
         'achievements': ['__1st place:__ Head-to-Head tournament', '__Winners:__ "Best Lap Time" challenge *[with a time of 10.823"]*', '__Winners:__ "Best Average Time" challenge *[with a time of 11.368"]*'],
         'demo': ''
     },
-    {
-        'title': 'TSP AI Cup',
-        'path': 'ai-cup',
-        'category': 'University Competition',
-        'macro_category': 'Competition',
-        'icon': 'assets/competitions/ai_cup.svg',
-        'competition': '[USI 16th Edition AI Cup](https://search.usi.ch/it/corsi/35263621/artificial-intelligence) - Euclidean Travelling Salesman Problem (TSP) competition.',
-        'description': 'The purpose of this competition was to find the shortest possible tours given a number of Euclidean TSP problems. In order to do so, we had to propose, implement and test one or more heuristic algorithms learned during the semester. I\'ve decided to implement the [Best Nearest Neighbors](https://en.wikipedia.org/wiki/Nearest_neighbor_search) heuristic algorithm and the [2.5-opt](https://tsp-basics.blogspot.com/2017/03/25-opt.html) optimizer. The combination of the two algorithms mentioned above made me reach an average gap of 4.2% between the best possible solution and my solution.',
-        'screenshots': [],
-        'technologies': ['**Language:** C++11'],
-        'link': ['https://github.com/edoriggio/ai-cup'],
-        'achievements': [],
-        'demo': ''
-    }
 ]
 
 export default {

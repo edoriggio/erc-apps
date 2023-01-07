@@ -126,6 +126,8 @@ export default {
 
         this.jobsSorted = this.jobs
         this.educationSorted = this.education
+
+        window.scrollTo(0, 0)
     },
     methods: {
         ...mapActions([
