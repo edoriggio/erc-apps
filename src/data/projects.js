@@ -144,7 +144,7 @@ const _projects = [
         'category': 'University Project',
         'macro_category': 'Project',
         'icon': 'assets/projects/rasterizer.png',
-        'description': '',
+        'description': 'During the fifth semester of my Bachelor\'s degree, in the Computer Graphics course, one of the assignments required me to create a rasterizer in JavaScript in two weeks. This rasterizer is able to raster a interactive 3D terrain. The user can change the viewing angle, as well as changing the direction of the light. In addition, the user is also able to modify the terrain itself. By using the dedicated slider, it is possible to scale the terrain and to increase or decrease the bias. The terrain is divided into 5 different levels: water, sand, grass, rocks, and snow. The ranges between these level can also be modified by using the \'Water Level\' slider. For a live demo of this project, [click here](https://erc-apps.com/demos/rasterizer).',
         'screenshots': ['assets/projects/rasterizer/rasterizer_1.png', 'assets/projects/rasterizer/rasterizer_2.gif'],
         'technologies': [
             '**Language:** JavaScript',
@@ -159,7 +159,7 @@ const _projects = [
         'category': 'University Project',
         'macro_category': 'Project',
         'icon': 'assets/projects/cape.png',
-        'description': '',
+        'description': 'During the fifth semester of my Bachelor\'s degree, in the Computer Graphics course, one of the assignments required me to create a very basic physics simulator in JavaScript in one week. This is an extension of the [rasterizer](https://erc-apps.com/projects/rasterizer) project. Here, we were asked to create a cloth simulation using Javascript and GLMatrix. The rendering part had already been tackled in the aforementioned project. In the case of this project, we had to implement a mass-spring system to animate the piece of cloth. As with the other project, this is also interactive, this means that the user can move both the point of view and the direction of the light. In addition, the user can also choose to anchor or release three predefined points. A full demo of the project can be found [here](https://erc-apps.com/demos/cape).',
         'screenshots': ['assets/projects/cape/cape_1.png', 'assets/projects/cape/cape_2.gif'],
         'technologies': [
             '**Language:** JavaScript',
