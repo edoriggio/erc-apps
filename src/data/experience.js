@@ -7,7 +7,7 @@ const _jobs = [
                 "title": "Teaching Assistant",
                 "type": "Part-Time",
                 "period": "Feb 2023 - May 2023 · 4 months",
-                "description": "Worked as a teaching assistant for the \"Engineering Project\" course (Bachelor in Informatics - 2nd year) taught by Dr. Andrea Mocci. During the semester I worked with and helped teach how to the basic elements of software engineering, such as CI/CD, Docker, Vue.JS, SpringBoot, and GitLab."
+                "description": "Worked as a teaching assistant for the \"Engineering Project\" course (Bachelor in Informatics - 2nd year) taught by Dr. Andrea Mocci. During the semester I worked with and helped teach the basic elements of software engineering, such as CI/CD, Docker, Vue.JS, SpringBoot, and GitLab."
             },
             {
                 "title": "Teaching Assistant",
