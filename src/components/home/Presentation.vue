@@ -21,18 +21,22 @@
         </div>
 
         <div class="right">
-            <img src="https://i.ibb.co/9wvn3G0/profile-pic.png" alt="profile-pic"/>
+            <img :src="pic" alt="profile-pic"/>
         </div>
     </div>
 </template>
 
 <script>
 import Socials from '@/components/Socials'
+import profilePic from '@/assets/profile-pic.jpg'
 
 export default {
     components: {
         Socials
-    }
+    },
+    data: () => ({
+        pic: profilePic
+    })
 }
 </script>
 
