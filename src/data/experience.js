@@ -30,7 +30,7 @@ const _jobs = [
         "icon": "assets/companies/marina.svg",
         "title": "C4 and Security Department Intern",
         "type": "Internship",
-        "period": "Apr 2018 · 1 months",
+        "period": "Apr 2018 · 1 month",
         "description": "Worked in the Data Centre and Networking Department at the Marina Militare headquarters in Rome. The topic covered during the internship were the architecture of a Data Centre, the network services of a Data Centre, the security systems of a Data Centre, service deployment and creation of Virtual Machines, Operating Systems and Cyber Security."
     },
     {
@@ -38,7 +38,7 @@ const _jobs = [
         "icon": "assets/companies/toscano.png",
         "title": "TSoftware Intern",
         "type": "Internship",
-        "period": "Apr 2018 · 1 months"
+        "period": "Apr 2018 · 1 month"
     }
 ]
 
