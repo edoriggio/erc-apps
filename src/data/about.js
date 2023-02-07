@@ -12,6 +12,12 @@ const _skills = [
                 'icon': 'assets/projects/duplicatefinder.png',
             },
             {
+                'name': 'Quantum Network',
+                'path': 'quantum-network',
+                'category': 'Projects',
+                'icon': 'assets/projects/netsquid.png'
+            },
+            {
                 'name': 'COVID Newsletter',
                 'path': 'covid-newsletter',
                 'category': 'Competitions',
@@ -98,16 +104,16 @@ const _skills = [
         'icon': 'cplusplus',
         'projects': [
             {
-                'name': 'TSP AI Cup',
-                'path': 'ai-cup',
-                'category': 'Competitions',
-                'icon': 'assets/competitions/ai_cup.svg'
-            },
-            {
                 'name': 'Raytracer',
                 'path': 'raytracer',
                 'category': 'Projects',
                 'icon': 'assets/projects/raytracer.svg'
+            },
+            {
+                'name': 'TSP AI Cup',
+                'path': 'ai-cup',
+                'category': 'Competitions',
+                'icon': 'assets/competitions/ai_cup.svg'
             }
         ]
     },

@@ -113,4 +113,8 @@ export default {
 .cape-logo {
     width: 35% !important;
 }
+
+.quantum-network-logo {
+    width: 60% !important;
+}
 </style>

@@ -169,6 +169,21 @@ const _projects = [
         'demo': 'cape'
     },
     {
+        'title': 'Quantum Network',
+        'path': 'quantum-network',
+        'category': 'University Project',
+        'macro_category': 'Project',
+        'icon': 'assets/projects/netsquid.png',
+        'description': 'During the first semester of my Master\'s, in the Distributed Systems course, my group (composed by Lorenzo Zaniol, [Isin Su Ecevit](https://www.linkedin.com/in/isin-su-ecevit-578582176/), and me) developed a functioning quantum network. This network was written in Python using the NetSquid library. The topology of the network is a Star topology *[Screenshot 1]*, this means that the center of the network is a Quantum Source that generates entangled Bell pairs. On the other hand, the points of the star are nodes with quantum memories. One of the points of the network is a Quantum Repeater. This repeater is connected to a remote node which has a Quantum Source as well as a quantum memory. The repeater will receive one qubit from the source, one qubit from the remote node, and will perform Entanglement Swapping on those qubits *[Screenshot 2]*. A more detailed report on the project can be found [here](https://github.com/edoriggio/quantum-network/blob/8cf16d95016592d613e23eb8f6c6f27a960459e9/docs/report.pdf).',
+        'screenshots': ['assets/projects/quantum_network/network.png', "assets/projects/quantum_network/swapping.png"],
+        'technologies': [
+            '**Language:** Python v3.7.15',
+            '**External Library:** NetSquid v1.1.6'
+        ],
+        'link': ['https://github.com/edoriggio/quantum-network'],
+        'demo': ''
+    },
+    {
         'title': 'Classical Music',
         'path': 'classical-music',
         'category': 'Designflows 2019',

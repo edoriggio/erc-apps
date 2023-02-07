@@ -217,4 +217,9 @@ a:hover {
     margin: 63px 0 !important;
     width: 90px;
 }
+
+.quantum-network > img {
+    margin: 49px 0 !important;
+    width: 85px;
+}
 </style>

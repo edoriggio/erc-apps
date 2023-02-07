@@ -232,7 +232,8 @@ export default {
 
 #game-of-life > img,
 #checq-me > img,
-#erc-apps > img {
+#erc-apps > img,
+#quantum-network > img {
     margin-right: 20px !important;
     margin-left: 5px !important;
 }

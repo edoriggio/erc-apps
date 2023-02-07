@@ -97,10 +97,10 @@ export default {
         ]),
         parseMarkdown(md) {
             const html = md
-                    .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-                    .replace(/\*(.*)\*/gim, '<label class="gray">$1</label>')
-                    .replace(/__(.*)__/gim, '<span class="underline">$1</span>')
-                    .replace(/\[(.*?)\]\((.*?)\)/gim, '<a target="_blank" href="$2">$1</a>')
+                    .replace(/\*\*([^*]*)\*\*/gim, '<b>$1</b>')
+                    .replace(/\*([^*]*)\*/gim, '<label class="gray">$1</label>')
+                    .replace(/__([^_]*)__/gim, '<span class="underline">$1</span>')
+                    .replace(/\[([^\]]*?)\]\(([^)]*?)\)/gim, '<a target="_blank" href="$2">$1</a>')
 
             return html.trim()
         },
