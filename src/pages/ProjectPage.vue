@@ -134,6 +134,10 @@ export default {
                     this.project.technologies[i] = this.parseMarkdown(this.project.technologies[i])
                 }
 
+                for (let i = 0; i < this.project.achievements.length; i++) {
+                    this.project.achievements[i] = this.parseMarkdown(this.project.achievements[i])
+                }
+
                 this.project.description = this.parseMarkdown(this.project.description)
             } else if (this.project.macro_category === 'Competition') {
                 for (let i = 0; i < this.project.technologies.length; i++) {

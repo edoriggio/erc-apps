@@ -36,6 +36,12 @@ export default new Router({
             component: DemoPage
         },
         {
+            path: '/codi',
+            redirect: () => {
+                window.location.href = "https://codi.si.usi.ch/";
+            }
+        },
+        {
             path: '/about',
             name: 'about',
             component: About

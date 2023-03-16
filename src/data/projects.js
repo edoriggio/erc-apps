@@ -13,7 +13,7 @@ const _projects = [
             '**Map:** A map is displayed for users to see their position at all times, and monuments\' locations are displayed too.',
             '**Tips:** *[Screenshot 3]* In this section, suggestions are given mainly for new students. These range from suitcase preparation, to smog, water and internet issues, electrical socket\'s shape and useful phrases to use in case of an emergency.',
             '**Rewind:** This last section contains photos and videos taken by students of past years. Here the goal is for old students to relive the beautiful moments of the trip. While for new students, is a way to understand what they will do during those 3 weeks.'],
-        'achievements': ['__May 28 2018:__ The app became **n. 74** in the Italian education leaderboard of the App Store'],
+        'achievements': ['__May 28, 2018:__ The app became **n. 74** in the Italian education leaderboard of the App Store'],
         'demo': ''
     },
     {
@@ -182,6 +182,22 @@ const _projects = [
         ],
         'link': ['https://github.com/edoriggio/quantum-network'],
         'demo': ''
+    },
+    {
+        'title': 'CODI',
+        'path': 'codi',
+        'category': 'Bachelor Thesis',
+        'macro_category': 'Project',
+        'icon': 'assets/projects/codi.png',
+        'description': 'Modern instant messaging applications (e.g., Gitter, Slack, Discord) provide users with real-time communication means. Developers use them for collaborative development, to ask for code reviews, and to have software-related discussions. In short, a (potential) treasure trove for program comprehension. However, as with any high-throughput "chat application", messages interleave, leading to concurrent conversations. Associating messages to conversations is called conversation disentanglement, a useful and necessary pre-processing step to analyze datasets of instant messages. Although various conversation disentanglement algorithms have been proposed, it is cumbersome to set up proper execution environments and hard to ensure input data format consistency, calling for better practices and tool support. <br/><br/> We present CODI, a RESTful API micro-service and web interface for conversation disentanglement. It provides an easy way to disentangle conversation transcripts with pre-trained models or to train new ones on custom datasets, features, and hyper-parameters. CODI allows validation of manually annotated conversations, checks input consistency, and computes performance metrics. It achieves state-of-the-art performances on transcripts of IRC, Slack, and Discord conversations. We show how CODI can provide a significant improvement to reusability (and replicability) of research results, while reducing the efforts and potential mistakes due to configuration, setup, and execution.',
+        'screenshots': [],
+        'technologies': [
+            '**Language:** Python v3.10.0',
+            '**External Libraries:** Django v3.2.5, DjangoRestFramework v3.13.1, Numpy v1.21.5'
+        ],
+        'link': ['https://github.com/USIREVEAL/CODI'],
+        'achievements': ['__February 22, 2023:__ The paper has been accepted in the [ICPC 2023](https://conf.researchr.org/track/icpc-2023/icpc-2023-tool-demonstration)'],
+        'demo': '/codi'
     },
     {
         'title': 'Classical Music',

@@ -17,9 +17,13 @@
                 <p>View</p>
             </router-link>
 
-            <router-link v-if="demo !== ''" class="project-button icon-width" :to="`demos/${demo}`">
+            <router-link v-if="demo !== '' && !this.demo.includes('/')" class="project-button icon-width" :to="demoURL">
                 <i class="ri-global-line"/>
             </router-link>
+
+            <a v-if="this.demo.includes('/')" class="project-button icon-width" :href="demoURL">
+                <i class="ri-global-line"/>
+            </a>
         </div>
     </div>
 </template>
@@ -33,6 +37,11 @@ export default {
         category: String,
         path: String,
         demo: String
+    },
+    data() {
+        return {
+            demoURL: this.demo.includes('/') ? this.demo : `demos/${this.demo}`
+        }
     },
     methods: {
         getIcon(icon) {
@@ -221,5 +230,10 @@ a:hover {
 .quantum-network > img {
     margin: 49px 0 !important;
     width: 85px;
+}
+
+.codi > img {
+    width: 64px;
+    margin: 57px 0 !important;
 }
 </style>

@@ -114,6 +114,10 @@ export default {
     width: 35% !important;
 }
 
+.codi-logo {
+    width: 45% !important;
+}
+
 .quantum-network-logo {
     width: 60% !important;
 }
