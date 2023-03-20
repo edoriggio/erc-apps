@@ -97,6 +97,7 @@ const _projects = [
             '**Drivers:** Firefox gekodriver'],
         'screenshots': [],
         'link': ['https://github.com/edoriggio/instagram-duplicates-bot'],
+        'achievements': [],
         'demo': ''
     },
     {
@@ -110,6 +111,7 @@ const _projects = [
             '**External Library:** Swing'],
         'screenshots': ['assets/projects/game_of_life/screen.png', 'assets/projects/game_of_life/gun.gif'],
         'link': ['https://github.com/edoriggio/game-of-life'],
+        'achievements': [],
         'demo': ''
     },
     {
@@ -123,6 +125,7 @@ const _projects = [
             '**External Libraries:** Node.js, Mongoose'],
         'screenshots': ['assets/projects/checq_me/screen_1.png', 'assets/projects/checq_me/screen_2.png'],
         'link': ['https://github.com/edoriggio/checq.me'],
+        'achievements': [],
         'demo': ''
     },
     {
@@ -136,6 +139,7 @@ const _projects = [
         'technologies': ['**Language:** C++11',
             '**External Library:** OpenGL Mathematics (GLM)'],
         'link': ['https://github.com/edoriggio/raytracer'],
+        'achievements': [],
         'demo': ''
     },
     {
@@ -151,6 +155,7 @@ const _projects = [
             '**External Library:** GLMatrix v2.3.0'
         ],
         'link': ['https://github.com/edoriggio/rasterizer'],
+        'achievements': [],
         'demo': 'rasterizer'
     },
     {
@@ -166,6 +171,7 @@ const _projects = [
             '**External Library:** GLMatrix v2.3.0'
         ],
         'link': ['https://github.com/edoriggio/cape-simulation'],
+        'achievements': [],
         'demo': 'cape'
     },
     {
@@ -175,12 +181,13 @@ const _projects = [
         'macro_category': 'Project',
         'icon': 'assets/projects/netsquid.png',
         'description': 'During the first semester of my Master\'s, in the Distributed Systems course, my group (composed by Lorenzo Zaniol, [Isin Su Ecevit](https://www.linkedin.com/in/isin-su-ecevit-578582176/), and me) developed a functioning quantum network. This network was written in Python using the NetSquid library. The topology of the network is a Star topology *[Screenshot 1]*, this means that the center of the network is a Quantum Source that generates entangled Bell pairs. On the other hand, the points of the star are nodes with quantum memories. One of the points of the network is a Quantum Repeater. This repeater is connected to a remote node which has a Quantum Source as well as a quantum memory. The repeater will receive one qubit from the source, one qubit from the remote node, and will perform Entanglement Swapping on those qubits *[Screenshot 2]*. A more detailed report on the project can be found [here](https://github.com/edoriggio/quantum-network/blob/8cf16d95016592d613e23eb8f6c6f27a960459e9/docs/report.pdf).',
-        'screenshots': ['assets/projects/quantum_network/network.png', "assets/projects/quantum_network/swapping.png"],
+        'screenshots': ['assets/projects/quantum_network/network.png', 'assets/projects/quantum_network/swapping.png'],
         'technologies': [
             '**Language:** Python v3.7.15',
             '**External Library:** NetSquid v1.1.6'
         ],
         'link': ['https://github.com/edoriggio/quantum-network'],
+        'achievements': [],
         'demo': ''
     },
     {
@@ -189,14 +196,14 @@ const _projects = [
         'category': 'Bachelor Thesis',
         'macro_category': 'Project',
         'icon': 'assets/projects/codi.png',
-        'description': 'Modern instant messaging applications (e.g., Gitter, Slack, Discord) provide users with real-time communication means. Developers use them for collaborative development, to ask for code reviews, and to have software-related discussions. In short, a (potential) treasure trove for program comprehension. However, as with any high-throughput "chat application", messages interleave, leading to concurrent conversations. Associating messages to conversations is called conversation disentanglement, a useful and necessary pre-processing step to analyze datasets of instant messages. Although various conversation disentanglement algorithms have been proposed, it is cumbersome to set up proper execution environments and hard to ensure input data format consistency, calling for better practices and tool support. <br/><br/> We present CODI, a RESTful API micro-service and web interface for conversation disentanglement. It provides an easy way to disentangle conversation transcripts with pre-trained models or to train new ones on custom datasets, features, and hyper-parameters. CODI allows validation of manually annotated conversations, checks input consistency, and computes performance metrics. It achieves state-of-the-art performances on transcripts of IRC, Slack, and Discord conversations. We show how CODI can provide a significant improvement to reusability (and replicability) of research results, while reducing the efforts and potential mistakes due to configuration, setup, and execution.',
-        'screenshots': [],
+        'description': 'Modern instant messaging applications (e.g., Gitter, Slack, Discord) provide users with real-time communication means. Developers use them for collaborative development, to ask for code reviews, and to have software-related discussions. In short, a (potential) treasure trove for program comprehension. However, as with any high-throughput "chat application", messages interleave, leading to concurrent conversations. Associating messages to conversations is called conversation disentanglement, a useful and necessary pre-processing step to analyze datasets of instant messages. Although various conversation disentanglement algorithms have been proposed, it is cumbersome to set up proper execution environments and hard to ensure input data format consistency, calling for better practices and tool support. <br/><br/> We present CODI, a RESTful API micro-service and web interface for conversation disentanglement. It provides an easy way to disentangle conversation transcripts with pre-trained models or to train new ones on custom datasets, features, and hyper-parameters. CODI allows validation of manually annotated conversations, checks input consistency, and computes performance metrics. It achieves state-of-the-art performances on transcripts of IRC, Slack, and Discord conversations. We show how CODI can provide a significant improvement to reusability (and replicability) of research results, while reducing the efforts and potential mistakes due to configuration, setup, and execution. <br/><br/> Both the report and the poster of my thesis, from which the paper was written from, can be viewed on my GitHub page ([report](https://github.com/edoriggio/edoriggio/blob/master/thesis/report.pdf), [poster](https://github.com/edoriggio/edoriggio/blob/master/thesis/poster.pdf)).',
+        'screenshots': ['assets/projects/codi/codi_1.png', 'assets/projects/codi/codi_2.png', 'assets/projects/codi/codi_3.png', 'assets/projects/codi/codi_4.png'],
         'technologies': [
             '**Language:** Python v3.10.0',
             '**External Libraries:** Django v3.2.5, DjangoRestFramework v3.13.1, Numpy v1.21.5'
         ],
         'link': ['https://github.com/USIREVEAL/CODI'],
-        'achievements': ['__February 22, 2023:__ The paper has been accepted in the [ICPC 2023](https://conf.researchr.org/track/icpc-2023/icpc-2023-tool-demonstration)'],
+        'achievements': ['__February 22, 2023:__ The paper has been accepted in the [ICPC 2023](https://conf.researchr.org/details/icpc-2023/icpc-2023-tool-demonstration/1/Conversation-Disentanglement-As-a-Service)'],
         'demo': '/codi'
     },
     {

@@ -21,7 +21,7 @@
                 <i class="ri-global-line"/>
             </router-link>
 
-            <a v-if="this.demo.includes('/')" class="project-button icon-width" :href="demoURL">
+            <a v-if="this.demo.includes('/')" class="project-button icon-width" :href="demoURL" target="_blank">
                 <i class="ri-global-line"/>
             </a>
         </div>
